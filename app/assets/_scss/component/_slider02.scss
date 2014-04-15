@@ -1,0 +1,161 @@
+.jcarousel-skin-mainbanner .jcarousel-container {
+    margin: 0;
+	}
+.jcarousel-skin-mainbanner .jcarousel-direction-rtl {
+	direction: rtl;
+	}
+.jcarousel-skin-mainbanner .jcarousel-container-horizontal {
+    width: 100%;
+	}
+.jcarousel-skin-mainbanner .jcarousel-clip {
+    overflow: hidden;
+	}
+.jcarousel-skin-mainbanner .jcarousel-clip-horizontal {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+    width:  100%;
+    height: 310px;
+    padding: 0;
+	}
+.jcarousel-skin-mainbanner .jcarousel-item {
+    width: 100%;
+	margin: 0;
+    height: 310px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	}
+.jcarousel-skin-mainbanner .jcarousel-item-horizontal {
+    margin-left: 0px;
+    margin-right: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+	}
+.jcarousel-skin-mainbanner .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 0px;
+	margin-right: 0;
+	}
+.jcarousel-skin-mainbanner .jcarousel-item-horizontal a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jcarousel-skin-mainbanner .jcarousel-item-horizontal span {
+	position: absolute;
+	height: 36px;
+	width: 100%;
+	background: black;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	line-height: 36px;
+	color: white;
+	text-decoration: none;
+	text-indent: 20px;
+	opacity: 0.7;
+	}
+
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-mainbanner .jcarousel-next-horizontal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: transparent url(../img/big-next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 0px;
+    right: auto;
+    background-image: url(../img/big-prev-horizontal.png);
+}
+
+.jcarousel-skin-mainbanner .jcarousel-next-horizontal:hover,
+.jcarousel-skin-mainbanner .jcarousel-next-horizontal:focus {
+    background-position: -55px -px;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-next-horizontal:active {
+    background-position: -110px 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-mainbanner .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-mainbanner .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-mainbanner .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -165px 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 15px;
+    right: 65px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: transparent url(../img/big-prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 0px;
+    background-image: url(next-horizontal.gif);
+}
+
+.jcarousel-skin-mainbanner .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-mainbanner .jcarousel-prev-horizontal:focus {
+    background-position: -55px 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-prev-horizontal:active {
+    background-position: -110px 0;
+}
+
+.jcarousel-skin-mainbanner .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-mainbanner .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-mainbanner .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-mainbanner .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -165px 0;
+}
+
+
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 900px) {
+	.jcarousel-skin-mainbanner .jcarousel-item {
+		width: 200px;
+		}
+	.jcarousel-skin-mainbanner .jcarousel-container-horizontal {
+	    width: 100%;
+		}
+	.jcarousel-skin-mainbanner .jcarousel-clip-horizontal {
+	    width: 100%;
+		}
+	}
+
+@media (max-width: 767px) {
+	.jcarousel-skin-mainbanner .jcarousel-item  {
+		width: 50%;
+		background: purple;
+		}
+	}
+	
+
+@media (max-width: 480px) {
+	.jcarousel-skin-mainbanner .jcarousel-item {
+		width: 200px;
+		background: green;
+		}
+	}
+

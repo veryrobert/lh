@@ -1,0 +1,57 @@
+
+.wrapper {
+  @include outer-container;
+}
+
+.full-width {
+  @include fill-parent;
+}
+
+.primary-content {
+  section, aside {
+    margin-top: 10px;
+    margin-bottom: 1.1%;
+    @include border-radius(2px);
+  }
+}
+
+// Images sprites // Mixin is in 
+///////////////////////////////////////////////////////////////////////////////
+
+.sprite-1 {
+  background-image: url(../img/icon_sprite.png);
+  background-image: url(../img/icon_sprite.svg);
+}
+
+.sprite-2 {
+  background-image: url(../img/icon_sprite2.png);
+  background-image: url(../img/icon_sprite2.svg);
+}
+
+// Class fixes
+///////////////////////////////////////////////////////////////////////////////
+
+// Pull elements right
+.pull-right {
+  float: right;
+}
+
+// Temporary advert class
+.advert {
+  background: yellow;
+}
+
+// Arrow on menu
+.arrow-up {
+  position: absolute;
+  top: -14px;
+  left: 59px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid $dark-purple;
+  @include transition(all 0.2s ease-in-out);
+}
+
+

@@ -1,0 +1,71 @@
+.jcarousel-wrapper {
+  margin: 10px auto;
+  width: 94.4%;
+  left: 2.8%;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/** Carousel **/
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    width: 200px;
+    float: left;
+   	height: 180px;
+	margin-right: 10px;
+	// margin-left: 10px;
+	&:first-child {
+		margin-left: 0px;
+	}
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev, .jcarousel-control-next { 
+  top: 0px;
+  margin-top: 0;
+  width: 30px;
+  text-align: center;
+  
+  color: #fff;
+  text-decoration: none;
+	height: 100%;
+	position: absolute;
+	background-color: $dark-purple;
+
+}
+
+.jcarousel-control-prev {
+  left: -30px;
+   @include sprite(sprite-2, 50%, -611px, 100%, 30px);
+   @include border-left-radius(3px);
+   // @include transform(rotate(1deg));
+
+}
+
+.jcarousel-control-next {
+  right: -30px;
+   @include sprite(sprite-2, 50%, -411px, 100%, 30px);
+   @include border-right-radius(3px);
+}
+
+

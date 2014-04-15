@@ -1,0 +1,94 @@
+#slider {
+  margin: 10px 0px;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin-right: 0px;
+  width: 67.5%;
+  // z-index: 2222;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  // margin-bottom: -6px;
+  // margin-right: -1px;
+}
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 310px;
+  // @include border-radius(2px);
+}
+
+.swipe {
+  span.container {
+    position: absolute;
+    display: inline-block;
+    // z-index: 9999;
+    top: 87%;
+    width: 46%;
+    color: white;
+    @include transition(all 0.2s ease-in-out);
+    &.active {
+      @include transform(translateY(-70%));
+      @include transition(all 0.2s ease-in-out);
+    }
+  }
+  h3 {
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    @include background-opacity(#00aec7, 0.9);
+  }
+  p {
+    margin-top: 2px;
+    padding: 10px 15px;
+    @include background-opacity(#00aec7, 0.9);
+    width: 113%;
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 120px;
+  }
+  .up {
+    // left: 282px;
+    @include background-opacity(#00aec7, 0.9);
+    @include sprite(sprite-1, 96.7%, 69.9%, 41px, 41px);
+    bottom: 5px;
+    float: right;
+    margin: -41px -43px 0 0;
+    &.active {
+      background-position: 96.7% 56.3%;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+.next, .prev {
+  position: absolute;
+  top: 13px;
+  cursor: pointer;
+  @include transition(all 0.1s ease-in-out);
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.next {
+  @include sprite(sprite-1, 21.6%, 45.3%, 42px, 42px);
+  right: 15px;
+}
+
+.prev {
+  @include sprite(sprite-1, 1.6%, 45.3%, 42px, 42px);
+  right: 60px;
+}

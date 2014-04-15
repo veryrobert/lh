@@ -1,0 +1,140 @@
+/* Variables */
+// $width: 15em; // dropdown width
+$height: 3em;
+
+// dropdown height
+$ajust: 1em;
+
+// left & right padding in dropdown menu
+$radius: 3px;
+
+aside.booking {
+
+  h2 {
+    color: #fff;
+  }
+  background-color: $dark-purple;
+
+  padding: 30px;
+  float: left;
+  margin-right: 0px;
+  height: 310px;
+  @include border-left-radius(0px);
+  width: 32.5%;
+  position: relative;
+  z-index: 8888;
+  font-size: 14px;
+  button {
+    padding: 12px 15px;
+    text-align: left;
+    border: none;
+    background-color: #CA3743;
+    @include border-radius(2px);
+    color: #fff;
+    margin-top: 5px;
+    @include sprite(sprite-2, 50%, -880px, 42px, 100%);
+    text-indent: 0px;
+  }
+}
+
+/* Dropdown style */
+.dropdown {
+  // width: $width;
+  // margin-bottom: 1em;
+  // Cosmetic value
+  dt {
+    a {
+      font-size: 14px;
+      height: 41px;
+      background-color: #fff;
+      text-decoration: none;
+      color: rgba(65, 67, 84, 0.5);
+      font-weight: lighter;
+      // fall back for nth-child below
+      @include sprite(sprite-2, 1px, -1280px, 42px, 100%);
+      text-indent: 20px;
+      
+      @include border-radius(2px);
+    }
+    span {
+      display: block;
+      padding: 0 $ajust;
+      line-height: 42px;
+      cursor: pointer;
+
+    }
+  }
+  dd {
+    position: relative;
+    ul {
+      display: none;
+      position: absolute;
+      z-index: 9999;
+      left: 0;
+      top: -39px;
+      width: 100%;
+      @include border-radius(2px);
+      list-style: none;
+      background: #fff none repeat scroll 0 0;
+      
+      box-shadow: 0px 2px 8px #333;
+
+      li:first-child a:hover {
+        @include border-top-radius(2px);
+      }
+      li:last-child a:hover {
+        @include border-bottom-radius(2px);
+      }
+    }
+    li a {
+      font-size: 13px;
+      display: block;
+      padding: 0 $ajust;
+      line-height: 42px;
+      text-decoration: none;
+      &:hover {
+        background-color: #CA3743;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+aside .dropdown:first-of-type dt a {
+	 @include sprite(sprite-2, 3px, -1078px, 41px, 100%);
+	 text-indent: 20px;
+}
+
+aside .dropdown:last-of-type dt a {
+	 @include sprite(sprite-2, 1px, -1481px, 41px, 100%);
+	 text-indent: 20px;
+}
+
+aside:nth-child(2) dt a {
+	@include sprite(sprite-2, 1px, -1280px, 41px, 100%);
+	 text-indent: 20px;
+}
+
+
+dl dt {
+  margin-bottom: -8px;
+}
+
+.selected {
+  font-weight: 700;
+}
+
+
+.down-arrow {
+	@include sprite(sprite-1, 97%, 56.2%, 42px, 42px);
+	background-color: #CA3743;
+	position: absolute;
+	// z-index: 9999;
+	right: 30px;
+	margin-top: -42px;
+	@include border-right-radius(2px);
+
+
+
+}

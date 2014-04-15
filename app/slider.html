@@ -1,0 +1,74 @@
+---
+layout: default
+title: lh
+---
+
+
+	<script type="text/javascript">	
+
+			function mycarousel_initCallback(carousel)
+			{
+			    // Disable autoscrolling if the user clicks the prev or next button.
+			    carousel.buttonNext.bind('click', function() {
+			        carousel.startAuto(0);
+			    });
+			
+			    carousel.buttonPrev.bind('click', function() {
+			        carousel.startAuto(0);
+			    });
+			
+			    // Pause autoscrolling if the user moves with the cursor over the clip.
+			    carousel.clip.hover(function() {
+			        carousel.stopAuto();
+			    }, function() {
+			        carousel.startAuto();
+			    });
+			};
+				
+		$(document).ready(function() {
+			$('.carousel02').jcarousel({
+				visible: 1,
+				scroll: 1,
+				auto: 4,
+				wrap: 'last',
+				initCallback: mycarousel_initCallback
+			});
+		
+		    var id;
+		    $(window).resize(function() {
+		        clearTimeout(id);
+		        id = setTimeout(doneResizing, 0);
+		    });
+		    // doneResizing();
+		
+		    console.log('Im here');
+
+		});
+
+		</script>	
+
+
+<div class="wrapper right-aside primary-content">
+	<div class="col-eight mainbanner">
+		<ul id="carousel01" class="carousel02 jcarousel-skin-mainbanner">
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 1</span></a></li>
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 2</span></a></li>		    
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 3</span></a></li>		    
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 4</span></a></li>
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 5</span></a></li>		    
+				    <li style="background-image: url('http://www.placekitten.com/600/300'); background-size:cover; background-position:center center;">
+				    <a href="#"><span>Slide 6</span></a></li>		    
+		</ul>
+	</div>
+	<aside class="col-four pull-right"></aside>
+</div>
+
+
+
+
+

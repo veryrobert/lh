@@ -1,0 +1,78 @@
+// Neat Overrides
+///////////////////////////////////////////////////////////////////////////////
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: em(1088);
+
+// Neat Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+$medium-screen: em(640);
+$large-screen: em(860);
+
+
+$mobile: new-breakpoint(max-width 700px 6);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+
+
+// Grid
+///////////////////////////////////////////////////////////////////////////////
+.col-one {
+  @include span-columns(1);
+}
+
+.col-two {
+  @include span-columns(2);
+}
+
+.col-three {
+  @include span-columns(3);
+}
+
+.col-four {
+  @include span-columns(4);
+}
+
+.col-five {
+  @include span-columns(5);
+}
+
+.col-six {
+  @include span-columns(6);
+}
+
+.col-seven {
+  @include span-columns(7);
+}
+
+.col-eight {
+  @include span-columns(8);
+}
+
+.col-nine {
+  @include span-columns(9);
+}
+
+.col-ten {
+  @include span-columns(10);
+}
+
+.col-eleven {
+  @include span-columns(11);
+}
+
+.col-twelve {
+  @include span-columns(12);
+}
+
+[class*='col-'] {
+  // background: rgba(255, 255, 255, 0.3);
+  &.pull-right {
+    @include omega;
+  }
+  @include media($mobile) {
+    @include span-columns(6);
+  }
+}
+
