@@ -1,0 +1,25 @@
+.newsletter {
+    background-color: $dark-purple;
+    padding: 22px;
+}
+
+.advert {
+  background: aqua;
+  // height: 300px;
+}
+
+.pagelink {
+  height: 180px;
+  position: relative;
+
+  a {
+    position: absolute;
+    bottom: 0px;
+    padding: 8px 22px;
+    color: white;
+    width: 100%;
+      @include border-bottom-radius(3px);
+    @include background-opacity(#00aec7, 0.9);
+  }
+
+}

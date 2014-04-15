@@ -218,6 +218,13 @@ footer {
   @include fill-parent;
   height: 280px;
   background: white;
+  padding-top:50px;
+  text-align: center;
+
+  ul li {
+    display: inline;
+  }
+
 }
 
 // Social Icons
@@ -275,10 +282,6 @@ header .social {
 	display: block;
 }
 
-.advert {
-  background: aqua;
-  height: 300px;
-}
 
 // Page Banner
 ///////////////////////////////////////////////////////////////////////////////
