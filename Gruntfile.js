@@ -277,15 +277,15 @@ module.exports = function (grunt) {
           patterns: [
             {
               match: /("|'?)\/?assets\//g,
-              replacement: '$1http://veryrobert.github.io/lighthouse/assets/'
+              replacement: '$1http://veryrobert.github.io/lh/assets/'
             },
             {
               match: /(<a[^>]*href="?)(\/)/g,
-              replacement: '$1http://veryrobert.github.io/lighthouse/'
+              replacement: '$1http://veryrobert.github.io/lh/'
             },
             {
               match: /(<form[^>]*action="?)(\/)/g,
-              replacement: '$1http://veryrobert.github.io/lighthouse/'
+              replacement: '$1http://veryrobert.github.io/lh/'
             }
           ]
         },
