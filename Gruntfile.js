@@ -266,7 +266,7 @@ module.exports = function (grunt) {
           commit: true,
           push: true,
           message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%',
-          remote: 'git@github.com:veryrobert/lighthouse.git',
+          remote: 'git@github.com:veryrobert/lh.git',
           branch: 'gh-pages'
         }
       }
