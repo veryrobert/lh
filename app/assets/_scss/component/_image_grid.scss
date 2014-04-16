@@ -1,0 +1,37 @@
+
+// .masonry .item {
+//   width:  340px;
+//   height: 180px;
+//   float: left;
+//   margin-bottom: 20px;
+//   background: #ccc;
+
+// }
+
+// .item.w2 { width:  340px; height:460px; }
+// .item.w3 { width:  700px; }
+
+.masonry {
+
+}
+
+.masonry .item { 
+  width: 32%; 
+  height: 60px;
+  margin-bottom: 2%;
+  background: #999;
+  height: 180px;
+  @include border-radius(3px);
+}
+
+.masonry .grid-sizer { width: 32%; }
+.masonry .gutter-sizer { width: 2%; }
+
+
+.item.w1 { width: 100%; }
+
+.item.w2 { width: 66%; }
+
+.item.h2 { height: 381px; }
+
+

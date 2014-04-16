@@ -275,4 +275,18 @@ $(document).ajaxSuccess(function() {
 });
 
 
+// Ajax Success
+///////////////////////////////////////////////////////////////////////////////
+
+
+// $(window).load(function(){
+
+  $('.masonry').masonry({
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    itemSelector: '.item',
+    transitionDuration: 0
+  });
+
+// }); // LOAD
 

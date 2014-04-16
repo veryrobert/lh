@@ -112,3 +112,7 @@ header input[type="submit"] {
   @include icon-sprite(sprite-1, #ca3743, 64%, 157.5%);
 }
 
+
+section.form > div.content {
+  margin: 10px 0;
+}
