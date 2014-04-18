@@ -43,7 +43,7 @@ h3 {
   font-size: $base-font-size * 1.125; // 16 * 1.125 = 18px
    &.medium-stencil {
     font-family: displayfont;
-     font-size: $base-font-size * 1.125; // 16 * 1.125 = 18px
+     font-size: $base-font-size * 1.2; // 16 * 1.125 = 18px
   }
 
 }
@@ -53,13 +53,18 @@ h4 {
 }
 
 h5 {
-  font-size: $base-font-size * 0.875; // 16 * 0.875 = 14px
+  font-size: 14px; // 16 * 0.875 = 14px
+  font-family: 'sansfont';
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h6 {
   font-size: $base-font-size * 0.750; // 16 * 0.750 = 12px
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .cart h6 {
@@ -70,6 +75,11 @@ p {
   font-size: $base-font-size * 0.875; // 16 * 0.875 = 14px
   margin: 0 0 ($base-line-height * .4);
   line-height: 1.5em;
+
+  &.large {
+    font-size: $base-font-size * 1.125; 
+  }
+
 }
 
 a {
@@ -143,3 +153,39 @@ button {
   line-height: 14px;
 }
 
+a.readmore {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+
+.content h3, h4.form-title, h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h6.category {
+  position: absolute;
+  width: 85px;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+}
+
+p.small,  {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+
+form.small {
+  font-size: 12px;
+}
+
+
+li.more-info h6 {
+  font-weight: normal;
+}

@@ -66,6 +66,69 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
   @include span-columns(12);
 }
 
+// inside stuff
+
+.two-eight {
+   @include span-columns(2 of 8);
+}
+
+.three-eight {
+   @include span-columns(3 of 8);
+}
+
+.four-eight {
+   @include span-columns(4 of 8);
+}
+
+.five-eight {
+   @include span-columns(5 of 8);
+}
+
+.six-eight {
+   @include span-columns(6 of 8);
+}
+
+.seven-eight {
+   @include span-columns(7 of 8);
+}
+
+.eight-eight {
+   @include span-columns(8 of 8);
+}
+
+// Inside twelve
+
+.one-twelve {
+  @include span-columns(1 of 12); 
+}
+
+.two-twelve {
+  @include span-columns(2 of 12); 
+}
+
+.three-twelve {
+  @include span-columns(3 of 12); 
+}
+
+.four-twelve {
+  @include span-columns(4 of 12); 
+}
+
+
+.five-twelve {
+  @include span-columns(5 of 12); 
+}
+
+
+.six-twelve {
+  @include span-columns(6 of 12); 
+}
+
+.seven-twelve {
+  @include span-columns(7 of 12); 
+}
+
+
 [class*='col-'] {
   // background: rgba(255, 255, 255, 0.3);
   &.pull-right {
@@ -76,3 +139,6 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
   }
 }
 
+img.one-twelve {
+  width: 12.17215%;
+}

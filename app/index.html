@@ -3,4 +3,53 @@ layout: default
 title: lh
 ---
 
-<h1>This is a title</h1>
+ {% include home-header.html %}
+ {% include jcarousel.html %}
+
+
+<div class="wrapper primary-content">
+	<h2 class="medium-stencil section-title">Now Showing</h2>
+	<section class="col-eight">
+		<ul class="accordion-tabs-minimal">
+
+			<li class="tab-header-and-content">
+			<a href="#" class="tab-link is-active">MON<span class="arrow-down is-active"></span></a>
+				<section id="showings-home">
+					{% include home-listings.html %}
+					{% include home-listings.html %}
+				</section>
+			</li>
+			
+			<!-- This is for tab title -->
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">TUES</a>
+				<section id="showings-home">
+					{% include home-listings.html %}
+					{% include home-listings.html %}
+				</section>
+			</li>
+
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">WED</a>		
+			</li>
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">THUR</a>		
+			</li>
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">FRI</a>		
+			</li>
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">SAT</a>		
+			</li>
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">SUN</a>		
+			</li>
+			<li class="tab-header-and-content">
+				<a href="#" class="tab-link">ALL</a>		
+			</li>
+
+		</ul>
+	</section>
+</div>
+
+

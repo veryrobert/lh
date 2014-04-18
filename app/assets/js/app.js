@@ -1,6 +1,16 @@
 $(document).ready(function(){
 
 
+// $('.bottom-row div').height();
+
+console.log($('.bottom-row').height());
+
+
+$('.one').each(function(){
+      var height = $('.two').height();
+      $(this).height(height);    
+});
+
 // Ajax Request
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -23,6 +33,9 @@ $(document).ready(function(){
         $(this).next().toggleClass('is-open').toggle();
         accordionTabs.find('.is-active').removeClass('is-active');
         $(this).addClass('is-active');
+        $(this).children('span').addClass('is-active');
+      
+
       } else {
         event.preventDefault();
       }
@@ -70,7 +83,7 @@ $('.up').click(function(){
 
 
 $("ul.subMenu li:nth-child(2) a").hover(function(){
-  $(".arrow-up").css("border-bottom-color", "rgb(39, 43, 58)");
+  $(".arrow-up").css("border-bottom-color", "rgb(7, 23, 37)");
   // $(".arrow-up").addClass("active");
   
 }, function(){
@@ -274,6 +287,10 @@ $(document).ajaxSuccess(function() {
 
 });
 
+
+  $('.tab-header-and-content .tab-link')
+
+  $(".tab-header-and-content:not(:first) .tab-link").append('<span class="arrow-down"></span>');
 
 // Ajax Success
 ///////////////////////////////////////////////////////////////////////////////

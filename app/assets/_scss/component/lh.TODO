@@ -1,11 +1,15 @@
 Lighthouse: Todo:
+ ☐ Mark-up
  ☐ Components
  ☐ Styling
  ☐ Typography
  ☐ Responsive
 
 Components:
- ☐ Header
+ ✔ Header @done (14-04-18 16:14)
+     ☐ Sidie Colors / Fix Firefox  Mobile Version
+
+ ✔ Slider Main @done (14-04-18 16:14)
  ☐ Footer
  ☐ Booknow
  ☐ Top Banner Image / with button / without button

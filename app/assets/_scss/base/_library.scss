@@ -36,10 +36,7 @@
   float: right;
 }
 
-// Temporary advert class
-.advert {
-  background: yellow;
-}
+
 
 // Arrow on menu
 .arrow-up {
@@ -50,8 +47,29 @@
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 14px solid $dark-purple;
+    // @include background-opacity(#3d4154, 0.9);
+  border-bottom: 14px solid #292d3d;
+  opacity: 0.9;
   @include transition(all 0.2s ease-in-out);
 }
 
+.tab-header-and-content {
+  position: relative;
+}
 
+.arrow-down.is-active {
+  position: absolute;
+  left: 35%;
+top: 46px;
+
+// margin-left: 35%;
+
+  @include triangle(22px 12px, $dark-purple, down);
+}
+
+p a.read-more {
+  @include sprite(sprite-2, 34%, 240.159%, 21px, 110px);
+  text-indent: 0px;
+  overflow: visible;
+  // display: inline;
+}

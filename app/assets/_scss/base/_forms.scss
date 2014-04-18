@@ -23,8 +23,9 @@ select {
 }
 
 label {
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: $base-line-height / 4;
+  line-height: 28px;
 
   &.required:after {
     content: "*";
@@ -42,13 +43,16 @@ select[multiple=multiple] {
   @include transition(border-color);
   background-color: white;
   border-radius: $form-border-radius;
-  border: 1px solid $form-border-color;
-  box-shadow: $form-box-shadow;
+  border: 2px solid $form-border-color;
+  // box-shadow: $form-box-shadow;
   font-family: $form-font-family;
   font-size: $form-font-size;
   margin-bottom: $base-line-height / 2;
   padding: ($base-line-height / 3) ($base-line-height / 3);
   // width: 100%;
+
+
+  // resize: none;
 
   &:hover {
     border-color: $form-border-color-hover;
@@ -58,14 +62,24 @@ select[multiple=multiple] {
     // border-color: $form-border-color-focus;
     // box-shadow: $form-box-shadow-focus;
     outline: none;
-    border: none;
+    border-color: $form-border-color-hover;
     box-shadow: none; 
   }
 }
 
+
+
+
 textarea {
-  resize: vertical;
+  resize: none;
 }
+
+textarea.large-comments {
+  resize: none;
+  margin-left: 22px;
+  height: 75px;
+}
+
 
 input[type="search"] {
   @include appearance(none);
@@ -116,3 +130,57 @@ header input[type="submit"] {
 section.form > div.content {
   margin: 10px 0;
 }
+
+.form ul li {
+// background: aqua;
+display: block;
+float: left;
+width: 100%;
+line-height: 18px;
+margin-bottom: 8px;
+}
+
+.form h5 {
+  display: normal;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.note {
+  padding-top: 50px;
+  padding-bottom: 0px;
+
+ p {
+    margin-bottom: 0px;
+  }
+
+}
+
+.line-adjust {
+  line-height: 18px;
+}
+
+.form {
+  input, select, div.six-eight {
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .cancel {
+    width: 100px;
+    text-align: center;
+    margin-left: 5px; 
+  }
+
+
+
+  div.six-eight {
+    // @include shift(1 of 8);
+    margin-top: 10px;
+    margin-left: 29%;
+  }
+
+}
+
+
+

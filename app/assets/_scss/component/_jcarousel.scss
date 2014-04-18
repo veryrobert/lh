@@ -22,10 +22,12 @@
     padding: 0;
   }
   li {
-    width: 200px;
+    position: relative;
+    // width: 200px;
+
     float: left;
    	height: 180px;
-	margin-right: 10px;
+	margin-right: 4px;
 	// margin-left: 10px;
 	&:first-child {
 		margin-left: 0px;
@@ -36,9 +38,25 @@
     max-width: 100%;
     height: auto !important;
   }
+
+  a {
+    position: absolute;
+    bottom: 0px; padding: 8px 18px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 174, 199, 0.9);
+  }
+
+
 }
 
 /** Carousel Controls **/
+
+
+.jcarousel > h6.category {
+  left: 0px;
+}
+
 
 .jcarousel-control-prev, .jcarousel-control-next { 
   top: 0px;

@@ -42,6 +42,8 @@
     padding: $base-line-height / 2 $gutter;
     @include media($tab-mode) {
       @include inline-block;
+      width: 12%;
+      text-align: center;
       border-top: 0;
       border-top-right-radius: $base-border-radius;
       border-top-left-radius: $base-border-radius;
@@ -54,11 +56,13 @@
       outline: none;
     }
     &.is-active {
-      background-color: $tab-active-background;
+
+      background-color: $dark-purple;
       border-bottom: 0;
       @include media($tab-mode) {
-        background-color: $tab-active-background;
+        background-color: $dark-purple;
         margin-bottom: -1px;
+        color: white;
       }
     }
   }
@@ -98,7 +102,7 @@
 ul.film-info {
 
   position: absolute;
-  width: 12%;
+  width: 85px;
   border-left: solid 1px #ececec;
   margin-top: -22px;
   font-weight: bold;
@@ -114,29 +118,7 @@ ul.film-info {
   }
 }
 
-ul.film-times {
-  @include span-columns(7 of 8);
-  float: left;
-  clear: both;
-  margin-top: 22px;
-}
 
-.film-times li {
-  display: inline-block;
-  height: 28px;
-  a {
-    display: inline-block;
-    background-color: #CA3743;
-    padding: 1px 10px 2px 10px;
-    color: white;
-    font-weight: normal;
-    font-size: 13px;
-    margin:0 6px 4px 0px;
-    border-radius: $base-border-radius;
-      @include sprite(sprite-2, 0%, 333.97%, 24px, 68px);
-      text-indent: 18px;
-  }
-}
 
 // above that sorted
 
@@ -150,10 +132,6 @@ ul.film-times {
   }
 
 
-
-.film-times li a.void {
-  background-color: #D9D2CD;
-}
 
 .category {
   color: #fff;

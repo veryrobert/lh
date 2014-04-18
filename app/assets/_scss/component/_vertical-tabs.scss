@@ -52,15 +52,12 @@
     @include media($vertical-tab-mode) {
       @include inline-block;
       // @include size(80% $vertical-tabs-height);
-      background-color: $tab-content-background;
+      // background-color: $tab-content-background;
       border: none;
     }
   }
   .vertical-tab-content {
-    background-color: white;
-    height: 300px;
-    padding: 22px;
-    @include border-radius(2px);
+
     @include media($vertical-tab-mode) {
       border: none;
       display: none;

@@ -36,7 +36,7 @@
     color: white;
     @include transition(all 0.2s ease-in-out);
     &.active {
-      @include transform(translateY(-70%));
+      @include transform(translateY(-75%));
       @include transition(all 0.2s ease-in-out);
     }
   }
@@ -48,7 +48,7 @@
   }
   p {
     margin-top: 2px;
-    padding: 10px 15px;
+    padding: 18px 22px 10px 15px;
     @include background-opacity(#00aec7, 0.9);
     width: 113%;
     font-size: 14px;
@@ -58,10 +58,10 @@
   .up {
     // left: 282px;
     @include background-opacity(#00aec7, 0.9);
-    @include sprite(sprite-1, 96.7%, 69.9%, 41px, 41px);
+    @include sprite(sprite-1, 96.7%, 69.9%, 41px, 42px);
     bottom: 5px;
     float: right;
-    margin: -41px -43px 0 0;
+    margin: -41px -44px 0 0;
     &.active {
       background-position: 96.7% 56.3%;
     }
@@ -75,7 +75,7 @@
 
 .next, .prev {
   position: absolute;
-  top: 13px;
+  top: 22px;
   cursor: pointer;
   @include transition(all 0.1s ease-in-out);
   &:hover {
@@ -92,3 +92,12 @@
   @include sprite(sprite-1, 1.6%, 45.3%, 42px, 42px);
   right: 60px;
 }
+
+.swipe-wrap h6.category {
+  left: 0px;
+}
+
+.jcarousel h6.category {
+  left: 0px;
+}
+
