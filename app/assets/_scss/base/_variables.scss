@@ -24,7 +24,7 @@ $base-border-radius: em(3);
 // Custom colours
 $yellow: rgba(251, 209, 72, 1);
 $bg-grey: rgba(240, 240, 236, 1);
-$dark-grey: rgba(96, 96, 96, 1);
+$dark-grey: #4d4d4d;
 $dark-purple: #3D4154;
 
 $blue: #477DCA;
@@ -44,7 +44,7 @@ $base-accent-color: $blue;
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: rgb(61, 65, 84);
 
 // Border color
 $base-border-color: $light-gray;

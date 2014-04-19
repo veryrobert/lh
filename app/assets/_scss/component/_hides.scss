@@ -1,0 +1,14 @@
+body {
+	  @include media($below-980) {
+     
+		.hide-980 {
+			display: none;
+		}
+
+      }
+      @include media($below-730) {
+     		.hide-730 {
+			display: none;
+		}
+      }
+}

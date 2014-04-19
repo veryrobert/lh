@@ -1,0 +1,49 @@
+---
+layout: default
+title: Lighthouse – Now Showing
+---
+
+<div class="wrapper right-aside primary-content">
+	<div class="page-banner col-twelve" style="background-image: url(http://www.placekitten.com/1020/310); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
+		<h1>Page Title</h1>
+	</div>
+</div>
+
+
+
+<div class="wrapper primary-content">
+
+		<ul class="accordion-tabs-minimal">
+
+		<li class="tab-header-and-content">
+			<a  class="tab-link is-active" href="">All<span class="arrow-down is-active"></span></a>
+			<section class="show-listings">
+				{% include now-showing.html %}
+				{% include now-showing.html %}
+			</section>
+		</li>
+
+		<li class="tab-header-and-content">
+			<a  class="tab-link" href="">TODAY</a>
+			<section class="show-listings">
+				{% include now-showing.html %}
+				
+			</section>
+		</li>
+
+		
+		<li class="tab-header-and-content">
+			<a  class="tab-link" href="">Specials</a>
+			<section class="show-listings">
+				{% include now-showing.html %}
+				
+			</section>
+		</li>
+
+
+	</ul>
+
+</div>
+
+
+

@@ -85,7 +85,7 @@
   position: relative;
   // min-height: 270px;
   p, h3 {
-    @include span-columns(5 of 8);
+    
     padding-left: 22px;
   }
   h3 {
@@ -163,3 +163,7 @@ ul.film-info {
   font-size: 14px;
 }
 
+
+li.tab-header-and-content a.tab-link.auto-width {
+  width: auto;
+}

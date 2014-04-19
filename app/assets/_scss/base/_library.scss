@@ -1,6 +1,10 @@
 
 .wrapper {
   @include outer-container;
+
+   @include media($small-desktop) {
+   padding: 0 22px;
+}
 }
 
 .full-width {
@@ -8,9 +12,15 @@
 }
 
 .primary-content {
+
+
+    margin-top: 10px;
+
+
+
   section, aside {
     margin-top: 10px;
-    margin-bottom: 1.1%;
+    margin-bottom: 10px;
     @include border-radius(2px);
   }
 }
@@ -32,10 +42,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // Pull elements right
-.pull-right {
-  float: right;
-}
 
+aside.pull-right {
+  clear: right;
+}
 
 
 // Arrow on menu
@@ -60,7 +70,7 @@
 .arrow-down.is-active {
   position: absolute;
   left: 35%;
-top: 46px;
+  top: 46px;
 
 // margin-left: 35%;
 

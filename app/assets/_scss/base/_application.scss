@@ -22,14 +22,8 @@
  * ---------------------------------------------------------------------------
  */
 
-
 body {
   background: $bg-grey;
-}
-
-a {
-  font-size: $fourteen;
-  color: $dark-grey;
 }
 
 
@@ -46,18 +40,14 @@ header {
     height: 60px;
   }
 
-	a {
-		color: #4d4d4d;
-	}
-
 }
 
 .darken-right {
-	height: 180px;
-	width: 300px;
-	background: $bg-grey;
-	position: absolute;
-	opacity: 0.5;
+  height: 180px;
+  width: 300px;
+  background: $bg-grey;
+  position: absolute;
+  opacity: 0.5;
 }
 
 header h1 {
@@ -79,11 +69,9 @@ nav {
     @include fill-parent;
     line-height: 50px;
     padding: 0 20px;
-
-	.menu a {
-		margin: 1.4%;
-	}
-
+    .menu a {
+      margin: 1.4%;
+    }
   }
   &#secondNav {
     @include fill-parent;
@@ -95,7 +83,6 @@ nav {
     float: left;
   }
 }
-
 
 ul.primaryMenu {
   margin-top: -6px;
@@ -110,15 +97,16 @@ ul.primaryMenu {
     margin-right: 1.4%;
     font-size: 0.875em;
   }
-}
 
+  @include media($small-desktop) {
+        width: 64%;
+      }
+}
 
 ul.primaryMenu > li, ul.menu > li {
-
-a {
-	font-size: 0.8em;
-}
-
+  a {
+    font-size: 0.8em;
+  }
   &:after {
     content: url("../img/slash.svg");
     vertical-align: -3px;
@@ -136,16 +124,13 @@ ul.menu, ul.social, ul.primaryMenu {
 
 ul.primaryMenu > li {
   position: relative;
-  // background: aqua;
-  // display: inline-block;
   padding-bottom: 35px;
   z-index: 9999;
-
 }
 
 ul.primaryMenu li > ul.subMenu {
   position: absolute;
-  margin: -25px;
+  margin: -20% -35%;
 }
 
 ul.subMenu {
@@ -186,7 +171,6 @@ ul.subMenu > li {
     @include transition(all 0.2s ease-in-out);
     &:hover {
       color: white;
-  
       margin: 0px;
       width: 140px;
       background: darken(#292d3d, 2%);
@@ -201,7 +185,6 @@ ul.subMenu > li {
 ul.subMenu li:nth-child(2) a:hover, ul.subMenu li:nth-child(2) a {
   position: relative;
   @include border-top-radius(5px);
-
 }
 
 ul.subMenu li:last-child a:hover, ul.subMenu li:last-child a {
@@ -211,8 +194,18 @@ ul.subMenu li:last-child a:hover, ul.subMenu li:last-child a {
 }
 
 nav#secondNav {
-width: 100.7%;
+  width: 100.7%;
 }
+
+
+form#newsletter {
+       @include media($small-desktop) {
+        width: 100%;
+      }
+}
+
+
+
 
 // Footer
 ///////////////////////////////////////////////////////////////////////////////
@@ -222,70 +215,111 @@ footer {
   @include fill-parent;
   height: 280px;
   background: white;
-  padding-top:50px;
+  padding-top: 50px;
   text-align: center;
-
   ul li {
     display: inline;
+    font-size: 11px;
   }
-
+  a {
+    font-size: 11px;
+    color: #CA3743;
+  }
+  .links {
+    color: #CA3743;
+    width: 30%;
+    padding-right: 3px;
+    margin: 0 auto;
+    line-height: 16px;
+    li:after {
+      content: " |";
+    }
+    li:nth-child(4):after, li:nth-child(7):after, li:last-child:after {
+      content: " ";
+    }
+  }
+  .logos {
+    margin-bottom: 22px;
+    li {
+      margin: 10px;
+      &:first-child a {
+        @include sprite(sprite-1, 65%, -129px, 47px, 138px);
+      }
+      &:nth-child(2) a {
+        @include sprite(sprite-1, 64%, -180px, 34px, 138px);
+      }
+      &:last-child a {
+        @include sprite(sprite-1, 78%, -226px, 34px, 138px);
+      }
+    }
+  }
 }
 
 // Social Icons
 ///////////////////////////////////////////////////////////////////////////////
 
-
-
 header .social {
 
-	li {
-		padding-right: 17px;
-		&:last-child { padding-right: 40px; }
-	}
 
-	a.social {
-		top: 8px; position: relative;
-	}
 
-	.twitter {
-		margin-top: 10px;
-		@include sprite(sprite-1, 2%, 30%, 20px, 20px);
-		// background-color: aqua;
-	}
 
-	.facebook {
-		margin-top: 10px;
-		@include sprite(sprite-1, 11%, 30%, 20px, 20px);
-		// background-color: aqua;
-	}
-	.youtube{
-		margin-top: 10px;
-		@include sprite(sprite-1, 20%, 30%, 20px, 20px);
-		// background-color: aqua;
-	}
-	.instagram{
-		margin-top: 10px;
-		@include sprite(sprite-1, 28%, 30%, 20px, 20px);
-		// background-color: aqua;
-	}
+  li {
+    padding-right: 17px;
+    &:last-child {
+      padding-right: 40px;
+    }
+  }
+  a.social {
+    top: 8px;
+    position: relative;
+  }
+  .twitter {
+    margin-top: 10px;
+    @include sprite(sprite-1, 2%, 30%, 20px, 20px);
+    // background-color: aqua;
+ 
+  }
+  .facebook {
+    margin-top: 10px;
+    @include sprite(sprite-1, 11%, 30%, 20px, 20px);
+    // background-color: aqua;
+ 
+  }
+  .youtube {
+    margin-top: 10px;
+    @include sprite(sprite-1, 20%, 30%, 20px, 20px);
+    // background-color: aqua;
+ 
+  }
+  .instagram {
+    margin-top: 10px;
+    @include sprite(sprite-1, 28%, 30%, 20px, 20px);
+    // background-color: aqua;
+ 
+  }
+}
 
+ul.social.pull-right.three-twelve {
+    @include media($below-730) {
+        float: left;
+        width: 70%;
+  }
 }
 
 // Cart Icons
 ///////////////////////////////////////////////////////////////////////////////
 
 .cart h6 {
-		position: relative;
-		padding: 17px;
+  position: relative;
+  padding: 17px;
 }
 
-.cart-icon {	
-	@include sprite(sprite-1, 2.6%, 99%, 45px, 30px);
-	@include border-bottom-radius(5px);
-	background-color: #05b2ca;
-	display: block;
+.cart-icon {
+  @include sprite(sprite-1, 2.6%, 99%, 45px, 30px);
+  @include border-bottom-radius(5px);
+  background-color: #05b2ca;
+  display: block;
 }
-
 
 // Page Banner
 ///////////////////////////////////////////////////////////////////////////////
@@ -294,10 +328,9 @@ header .social {
   height: 75px;
   line-height: 75px;
   padding: 20px 30px;
-  margin:10px 0;
+  margin: 10px 0 10px 0;
   color: #fff;
 }
-
 
 // General
 ///////////////////////////////////////////////////////////////////////////////
@@ -320,79 +353,68 @@ header .social {
   margin-left: -22px;
 }
 
-aside.newletter {
-
-  padding: 30px;
-
-    p {
-      margin-top: 20px;
-      margin-bottom: 48px;
-    }
-
-    background: #3d4154;
-    color: white;
-
-   form {
+aside.newsletter {
+  padding: em(30);
+  p {
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+  background: #3d4154;
+  color: white;
+  form {
     width: 100%;
-   } 
-
+  }
   input.email {
     display: inline-block;
-    padding: 0 1em;   
+    padding: 0 1em;
     // line-height: 42px;
     height: 42px;
     padding: 12px;
     padding: 21px;
     border: 0px;
-    width: 96%;
+    width: 84%;
+    @include border-right-radius(0px);
   }
-
   input.button {
     @include sprite(sprite-2, 50%, -480px, 42px, 42px);
     background-color: #CA3743;
     position: absolute;
-    right: 30px;
+    right: (30)em;
     border: none;
     @include border-right-radius(2px);
+  }
+
+  @include media($below-980) {
+    
+
   }
 
 }
 
 .content aside {
   margin-top: 0px;
-    // @include span-columns(3 of 8);
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .masonry {
   margin-top: 20px;
 }
 
-h2.section-title {
-  margin-top: 40px;
-}
+
 
 // Synopsis
 ///////////////////////////////////////////////////////////////////////////////
 
 section.synopsis > div > ul.category-post li {
   display: inline;
-
   img {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  
-
 }
-
-
-
-
 
 // Film Times
 ///////////////////////////////////////////////////////////////////////////////
-
 
 ul.film-times {
   @include span-columns(7 of 8);
@@ -401,16 +423,13 @@ ul.film-times {
   margin-top: 22px;
 }
 
-
 .film-times li a.void {
   background-color: #D9D2CD;
 }
 
-
 .film-times li, li.times {
   display: inline-block;
   // height: 28px;
-  
   a {
     display: inline-block;
     background-color: #CA3743;
@@ -418,48 +437,38 @@ ul.film-times {
     color: white;
     font-weight: normal;
     font-size: 13px;
-    margin:3px 2px;
+    margin: 3px 2px;
     border-radius: $base-border-radius;
-   
   }
 }
 
-aside li.times a{
-     @include sprite(sprite-2, 0%, 333.97%, 24px, 68px);
-      text-indent: 18px;
+aside li.times a, #showings-home .film-times li a {
+  @include sprite(sprite-2, 0%, 333.99%, 25px, 68px);
+  text-indent: 18px;
+  margin: 0px;
 }
+
+
 
 .day {
   border-bottom: solid 1px #ececec;
-  margin:0px -22px;
-  padding: 14px 22px 10px 22px; 
-
-
-
-
-h6 {
-  margin-bottom: 3px;
-}
-
-&:first-of-type {
-  border-top: solid 1px #ececec;
-}
-
-&:last-of-type {
-  margin-bottom: 14px;
-}
-
+  margin: 0px -22px;
+  padding: 14px 22px 10px 22px;
+  h6 {
+    margin-bottom: 3px;
+  }
+  &:first-of-type {
+    border-top: solid 1px #ececec;
+  }
+  &:last-of-type {
+    margin-bottom: 14px;
+  }
 }
 
 li.times {
-
-    
-     a {
-
+  a {
     margin: 0.5px 1px;
-
   }
-
 }
 
 aside.content:first-of-type {
@@ -470,55 +479,37 @@ aside.content:first-of-type {
   padding-bottom: 30px;
 }
 
-.all-listing .booking-list { 
-
-
-
-
+.all-listing .booking-list {
   position: relative;
-
-  padding-left: 80px;
-
-    div.day {
-    margin:0 -52px 0 -22px;
+  padding-left: 55px;
+  div.day {
+    margin: 0 -52px 0 -22px;
     border-left: solid 1px #ececec;
     padding: 4px 22px 4px 22px;
   }
-
   h3 {
-    margin:-22px -52px 0px -22px;
+    margin: -22px -52px 0px -22px;
     border-left: solid 1px #ececec;
     padding: 22px;
   }
-
   h6 {
     float: left;
     line-height: 28px;
   }
-
-
   ul {
     display: inline-block;
-    
     margin-left: 22px;
     width: 70%;
-
     li a {
       background-image: none;
-      padding: 0px 0px 1px 0px ;
+      padding: 0px 0px 1px 0px;
       margin-bottom: 3px;
       height: 22px;
       width: 58px;
       text-align: center;
     }
-
-
-  
   }
-
-
 }
-
 
 .film-review img {
   // padding: 0 18px;
@@ -531,35 +522,27 @@ li.times.void a {
 .bottom-row {
   position: absolute;
   bottom: 30px;
-      border-top: solid 1px #ececec;
-      border-bottom: solid 1px #ececec;
-      margin:0 -22px 0 -22px;
-      padding: 0 22px;
-      width: 46%;
-      // min-height: 70px;
-      // overflow: hidden;
-
-      div {
-        padding: 18px 22px 22px 22px ;
-        min-height: 70px;
-        width: auto;
-        min-width: 80px;
-        float: left;
-        position: relative;
-        left: -14px;
-        border-right: solid 1px #ececec;
-
-        &:last-child {
-          border-right: none;
-        }
-      
-      }
-
+  border-top: solid 1px #ececec;
+  border-bottom: solid 1px #ececec;
+  margin: 0 -22px 0 -22px;
+  padding: 0 22px;
+  width: 46%;
+  // min-height: 70px;
+  // overflow: hidden;
+  div {
+    padding: 18px 22px 22px 22px;
+    min-height: 70px;
+    width: auto;
+    min-width: 80px;
+    float: left;
+    position: relative;
+    left: -14px;
+    border-right: solid 1px #ececec;
+    &:last-child {
+      border-right: none;
+    }
+  }
 }
-
-
-
-
 
 // Film Times
 ///////////////////////////////////////////////////////////////////////////////
@@ -569,29 +552,29 @@ li.times.void a {
 }
 
 .season-tickets {
-
-        position: absolute;
-        top: 0px;
-        height: 100%;
-        left: 69%;
-         padding: 18px 22px;
-         border-left: solid 1px #ececec;
-         margin-left: 0px;
-
-      .more-info {
-         border-top: solid 1px #ececec;
-         padding: 18px 22px;
-         margin: 21px -22px;
-      }  
-
-     
-  
-      button {
-        width: 100%;
-      }
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  left: 69%;
+  padding: 18px 22px;
+  border-left: solid 1px #ececec;
+  margin-left: 0px;
+  .more-info {
+    border-top: solid 1px #ececec;
+    padding: 18px 22px;
+    margin: 21px -22px;
+  }
+  button {
+    width: 100%;
+  }
 }
 
-.season-thumb { margin-right: 6%;}
+.season-thumb {
+  margin-right: 6%;
+}
 
 
+section.show-listings.is-open {
+margin-top: 30px;
+}
 

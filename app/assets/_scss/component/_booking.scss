@@ -102,17 +102,17 @@ aside.booking {
 }
 
 aside .dropdown:first-of-type dt a {
-	 @include sprite(sprite-2, 3px, -1078px, 41px, 100%);
+	 @include sprite(sprite-2, 3px, -1078px, 42px, 100%);
 	 text-indent: 20px;
 }
 
 aside .dropdown:last-of-type dt a {
-	 @include sprite(sprite-2, 1px, -1481px, 41px, 100%);
+	 @include sprite(sprite-2, 1px, -1481px, 42px, 100%);
 	 text-indent: 20px;
 }
 
 aside:nth-child(2) dt a {
-	@include sprite(sprite-2, 1px, -1280px, 41px, 100%);
+	@include sprite(sprite-2, 1px, -1280px, 42px, 100%);
 	 text-indent: 20px;
 }
 
@@ -131,10 +131,11 @@ dl dt {
 	background-color: #CA3743;
 	position: absolute;
 	// z-index: 9999;
-	right: 30px;
+	right: 29px;
+   @include media($below-980) {
+        right: 21px;
+  } 
 	margin-top: -42px;
-  @include border-right-radius(2px);
-
-
+  @include border-right-radius(3px);
 
 }

@@ -1,0 +1,19 @@
+body {
+
+	@include media($below-980) {
+
+	aside.col-four.booking {
+	    padding: 22px;
+	}
+
+	aside.social a.social {
+	        width: 63.4px;
+	}
+
+	.arrow-down.is-active {
+		left: 30%;
+	}
+
+	}
+
+}

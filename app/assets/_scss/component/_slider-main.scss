@@ -1,5 +1,6 @@
 #slider {
   margin: 10px 0px;
+  background:#f0f0ec;
 }
 
 .swipe {
@@ -7,7 +8,14 @@
   visibility: hidden;
   position: relative;
   margin-right: 0px;
+
   width: 67.5%;
+  
+
+ @include media($mobile) { // As defined in _grid-settings.scss
+    width: 100%;
+  }
+
   // z-index: 2222;
 }
 
@@ -34,10 +42,11 @@
     top: 87%;
     width: 46%;
     color: white;
-    @include transition(all 0.2s ease-in-out);
+    @include transition(all 0.5s $ease-in-quad);
+
     &.active {
       @include transform(translateY(-75%));
-      @include transition(all 0.2s ease-in-out);
+      @include transition(all 0.5s $ease-out-quad);
     }
   }
   h3 {

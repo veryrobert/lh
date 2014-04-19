@@ -22,9 +22,15 @@
   }
 
   .btn {
-    @include button(simple, $base-body-color);
+    // @include button(simple, $base-body-color);
     font-size: $base-font-size;
     margin-bottom: $base-line-height;
+    position: absolute;
+    top: 210px;
+    padding: 5px 20px;
+        background-color: #CA3743;
+        color: white;
+    @include border-radius(3px);
   }
 
   .modal-open {
@@ -32,17 +38,19 @@
   }
 
   .modal-window { // overlay
-    @include transition(opacity .25s ease);
+    @include transition(all .25s ease);
     @include position(fixed, 0px 0px 0px 0px);
-    background: rgba(0,0,0, .85);
+    background: rgba(0,0,0, .9);
     opacity: 0;
     text-align: left;
-    visibility: hidden;
+    // visibility: hidden;
+    display: none;
     z-index: 99999999999;
 
     .modal-bg {
       @include position(absolute, 0px 0px 0px 0px);
-      cursor: pointer;
+      // cursor: pointer;
+
     }
   }
 
@@ -75,13 +83,13 @@
 
   .modal-inner {
     @include transition(opacity .25s ease);
-    border-radius: $base-border-radius;
-    background: $modal-background;
+  ;
+
     margin: auto;
-    max-height: 95%;
+    max-height: 360px;
     position: relative;
     overflow: auto;
-    width: 95%;
+    width: 640px;
     padding: $modal-padding /2;
     margin-top: .6em;
 
@@ -93,7 +101,7 @@
     }
 
     @include media($large-screen) {
-      width: 50%;
+      width: 711px;
       margin-top: 10em;
     }
 
@@ -140,6 +148,7 @@
   .modal-state:checked + .modal-window {
     opacity: 1;
     visibility: visible;
+    display: block;
   }
 
   .modal-state:checked + .modal-window .modal-inner {
