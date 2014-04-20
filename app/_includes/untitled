@@ -1,0 +1,124 @@
+
+.vertical-tabs-container {
+  // small screens: accordion
+  $tab-border-color: $base-border-color;
+  $tab-border: 1px solid $tab-border-color;
+  $tab-border-radius: $base-border-radius;
+  $tab-content-background: lighten($tab-border-color, 10);
+  $tab-active-color: $tab-content-background;
+  $tab-inactive-color: $base-body-color;
+  $vertical-tabs-height: em(300);
+  $vertical-tab-mode: $medium-screen;
+  @include clearfix;
+  // border-radius: $tab-border-radius;
+  // border: $tab-border;
+  margin-bottom: $base-line-height;
+  overflow: hidden;
+  .vertical-tabs {
+    display: none;
+    @include media($vertical-tab-mode) {
+      background-color: $tab-inactive-color;
+      display: inline;
+      float: left;
+      height: $vertical-tabs-height;
+      // width: 20%;
+    }
+  }
+  .vertical-tab {
+    @include media($vertical-tab-mode) {
+      // border-bottom: $tab-border;
+      margin-bottom: 5px;
+      @include border-radius(2px);
+      background: white;
+      display: block;
+      font-weight: bold;
+      margin-right: -1px;
+      padding: $base-line-height / 2 $gutter / 2;
+      padding-left: 18px;
+
+      &.is-active {
+          
+        background-color: $dark-purple;
+        color: white;
+        margin-right: -1px;
+      }
+    }
+}
+
+  
+  .vertical-tab:focus {
+    outline: none;
+  }
+
+  }
+
+
+  .vertical-tab-content-container {
+    display: block;
+    margin: 0 auto;
+    & a:focus {
+      outline: none;
+    }
+    @include media($vertical-tab-mode) {
+      @include inline-block;
+      // @include size(80% $vertical-tabs-height);
+      // background-color: $tab-content-background;
+      border: none;
+    }
+  }
+
+
+    @include media($vertical-tab-mode) {
+      border: none;
+      display: none;
+    }
+  }
+  .vertical-tab-accordion-heading {
+    background-color: $tab-inactive-color;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: $base-line-height / 2 $gutter / 2;
+    &:hover {
+      color: $base-accent-color;
+    }
+    &:first-child {
+      border-top: none;
+    }
+    &.is-active {
+      background-color: $dark-purple;
+      color: white;
+      border-bottom: none;
+    }
+    @include media($vertical-tab-mode) {
+      display: none;
+    }
+  }
+  border: none;
+}
+
+.vertical-tabs-container .vertical-tabs {
+  background: none;
+  height: auto;
+}
+
+
+.vertical-tab {
+  position: relative;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
