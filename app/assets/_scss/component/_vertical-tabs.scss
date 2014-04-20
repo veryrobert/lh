@@ -1,4 +1,3 @@
-
 .vertical-tabs-container {
   // small screens: accordion
   $tab-border-color: $base-border-color;
@@ -25,17 +24,22 @@
     }
   }
   .vertical-tab {
+    text-transform: uppercase;
+    font-size: 13px;
     @include media($vertical-tab-mode) {
       // border-bottom: $tab-border;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
       @include border-radius(2px);
       background: white;
       display: block;
       font-weight: bold;
       margin-right: -1px;
       padding: $base-line-height / 2 $gutter / 2;
+      padding-left: 15px;
+      padding-bottom: 12px;
       &.is-active {
-        background-color: $tab-content-background;
+        background-color: $dark-purple;
+        color: white;
         margin-right: -1px;
       }
     }
@@ -90,3 +94,10 @@
   background: none;
   height: auto;
 }
+
+
+.vertical-tab {
+  position: relative;
+} 
+
+

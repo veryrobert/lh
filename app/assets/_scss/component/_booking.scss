@@ -19,8 +19,8 @@ aside.booking {
   float: left;
   margin-right: 0px;
   height: 310px;
-  @include border-left-radius(0px);
-  width: 32.5%;
+  // @include border-left-radius(0px);
+  // width: 32.5%;
   position: relative;
   z-index: 8888;
   font-size: 14px;
@@ -139,3 +139,10 @@ dl dt {
   @include border-right-radius(3px);
 
 }
+
+
+  aside.booking.slider {
+    width: 32.5%;
+    @include border-left-radius(0px);
+  }
+

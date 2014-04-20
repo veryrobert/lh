@@ -20,6 +20,11 @@ select {
   // display: block;
   font-family: $form-font-family;
   font-size: $form-font-size;
+
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+
 }
 
 label {
@@ -182,5 +187,44 @@ margin-bottom: 8px;
 
 }
 
+.form select {
+  border: 2px solid $form-border-color;
+  height: 30px;
+  // width: auto;
+  text-align: center;
+  @include border-radius(2px);
+  padding: 5px 5px 5px 10px;
+  margin-right: 0px;
+
+  &:first-child { margin-left: 10px; }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+input[type='checkbox'] {
+   border: 2px solid $form-border-color;
+   width: 20px;
+   padding: 0px 7px 0px 7px;
+   margin-left: 0px;
+   margin-right: 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+li.small.checkbox {
+  font-size: 12px;
+  width: 34%;
+  margin-left: 29%;
+}
+
+#{$all-text-inputs-focus} { // Target the :focus pseudo-class
+  outline: none;
+}
 
 

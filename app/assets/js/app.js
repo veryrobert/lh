@@ -81,6 +81,17 @@ $('.up').click(function(){
   $(this).toggleClass('active');
 });
 
+$('.summary button.readmore').click(function(){
+  $('div.none').slideToggle();
+
+     if($(this).text() == 'Read More'){
+           $(this).text('Close');
+       } else {
+           $(this).text('Read More');
+       }
+
+});
+
 
 $("ul.subMenu li:nth-child(2) a").hover(function(){
   $(".arrow-up").css("border-bottom-color", "rgb(7, 23, 37)");
@@ -107,11 +118,6 @@ $("ul.subMenu li:nth-child(2) a").hover(function(){
   $(".js-vertical-tab").click(function(event) {
     event.preventDefault();
 
-    console.log("clicked table");
-
-    console.log('yolo');
-
-
     $(".js-vertical-tab-content").hide().html();
     var activeTab = $(this).attr("rel");
     var url = $(this).attr("href");
@@ -123,10 +129,14 @@ $("ul.subMenu li:nth-child(2) a").hover(function(){
     $("#"+activeTab).show();
 
     $(".js-vertical-tab").removeClass("is-active");
-    $(this).addClass("is-active");
+
 
     $(".js-vertical-tab-accordion-heading").removeClass("is-active");
+    $('span').removeClass('is-active');
     $(".js-vertical-tab-accordion-heading[rel^='"+activeTab+"']").addClass("is-active");
+    $(this).addClass("is-active");
+   
+   
   });
 
   
@@ -142,13 +152,25 @@ $("ul.subMenu li:nth-child(2) a").hover(function(){
     $(".js-vertical-tab-accordion-heading").removeClass("is-active");
     $(this).addClass("is-active");
 
+
     $(".js-vertical-tab").removeClass("is-active");
     $(".js-vertical-tab[rel^='"+accordion_activeTab+"']").addClass("is-active");
+
   });
 
 
 
+$('a.js-vertical-tab').click(function(){
 
+  $(this).children('span').addClass('is-active');
+  console.log('true');
+
+});
+
+ // if ($('a.js-vertical-tab').hasClass('is-active')) {
+ //    $(this).children('span').addClass('is-active');
+ //    console.log('true');
+ //    } 
 
 
 
@@ -291,6 +313,8 @@ $(document).ajaxSuccess(function() {
   $('.tab-header-and-content .tab-link')
 
   $(".tab-header-and-content:not(:first) .tab-link").append('<span class="arrow-down"></span>');
+
+  $(".vertical-tab:not(:first)").append('<span class="arrow-right"></span>');
 
 // Ajax Success
 ///////////////////////////////////////////////////////////////////////////////
