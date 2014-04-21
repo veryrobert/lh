@@ -24,11 +24,13 @@
 
 body {
   background: $bg-grey;
+  font-family: $helvetica;
 }
 
 #guts {
   min-height: 1000px;
 }
+
 
 // Header
 ///////////////////////////////////////////////////////////////////////////////
@@ -161,8 +163,7 @@ ul.subMenu > li {
   }
   a {
     color: white;
-    font-size: 12px;
-    font-weight: bold;
+    font: 12px bold $helvetica;
     margin: 0px;
     width: 140px;
     display: inline-block;
@@ -171,14 +172,12 @@ ul.subMenu > li {
     padding-left: 10px;
     @include transition(all 0.2s ease-in-out);
     &:hover {
-      color: white;
       margin: 0px;
       width: 140px;
       background: darken(#292d3d, 2%);
       display: inline-block;
       line-height: 34px;
       padding-left: 10px;
-      @include transition(all 0.2s ease-in-out);
     }
   }
 }
@@ -346,38 +345,7 @@ ul.social.pull-right.three-twelve {
   margin-left: -22px;
 }
 
-aside.newsletter {
-  padding: em(30);
-  p {
-    margin-top: 20px;
-    margin-bottom: 48px;
-  }
-  background: #3d4154;
-  color: white;
-  form {
-    width: 100%;
-  }
-  input.email {
-    display: inline-block;
-    padding: 0 1em;
-    // line-height: 42px;
-    height: 42px;
-    padding: 12px;
-    padding: 21px;
-    border: 0px;
-    width: 84%;
-    @include border-right-radius(0px);
-  }
-  input.button {
-    @include sprite(sprite-2, 50%, -480px, 42px, 42px);
-    background-color: #CA3743;
-    position: absolute;
-    right: 30 em;
-    border: none;
-    @include border-right-radius(2px);
-  }
-  @include media($below-980) {}
-}
+
 
 .content aside {
   margin-top: 0px;
@@ -455,9 +423,6 @@ li.times {
   }
 }
 
-aside.content:first-of-type {
-  margin-top: 0px;
-}
 
 .all-listing {
   padding-bottom: 30px;
@@ -532,14 +497,14 @@ li.times.void a {
 ///////////////////////////////////////////////////////////////////////////////
 
 .min-height {
-  min-height: 220px;
+  min-height: 226px;
 }
 
 .season-tickets {
   position: absolute;
   top: 0px;
   height: 100%;
-  left: 69%;
+  right: 59px;
   padding: 18px 22px;
   border-left: solid 1px #ececec;
   margin-left: 0px;
@@ -547,9 +512,6 @@ li.times.void a {
     border-top: solid 1px #ececec;
     padding: 18px 22px;
     margin: 21px -22px;
-  }
-  button {
-    width: 100%;
   }
 }
 
@@ -618,9 +580,7 @@ section.synopsis, aside.social {
 }
 
   margin-top: 20px;
-  section button {
-    // width: 150px;
-  }
+
   section h3 {
     margin-bottom: 0px;
   }
@@ -684,19 +644,7 @@ section.synopsis, aside.social {
   hr {
     margin-top: 0px;
   }
-  button, button.readmore {
-    width: 100%;
-    background-image: none;
-    margin-top: 0px;
-    color: white;
-    margin-bottom: 0px;
-    &:hover {
-      background-color: #CA3743;
-    }
-      &:focus {
-      background-color: light-grey;
-    }
-  }
+
 }
 
 .none {

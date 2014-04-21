@@ -146,12 +146,12 @@ ul.film-info {
 .rating {
   position: absolute;
   bottom: 75px;
-  padding: 23px;
+  padding: 21px;
   font-weight: bold;
   font-size: 14px;
   border-top: solid 1px #ececec;
   @include sprite(sprite-2, 49.8%, 440.19%, 60px, 0px);
-  text-indent: 0px;
+  text-indent: -2px;
 }
 
 .time {

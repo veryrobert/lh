@@ -1,49 +1,77 @@
-.advert {
-  background: aqua;
-  // height: 300px;
+$red: #CA3743;
+
+
+
+aside {
+
+   position: relative;
+
+  &.content:first-of-type {
+    margin-top: 0px;
+  }   
+
+    p {
+    margin: 12px 0 22px 0;
+  }
+
+  input {
+    height: 42px;
+    border: none;
+    padding: 18px;
+    &.email {
+      border: 0px;
+      @include border-right-radius(0px);
+      padding-left: 18px;
+    }
+    &.button {
+      background: $red;
+      margin-left: -4px;
+      @include border-right-radius(2px);
+    }
+  }
+
+  form#newsletter > input.button {
+          @include sprite(sprite-2, 50%, -480px, 42px, 42px);
+  }
+
+  h2 {
+    margin-bottom: 22px;
+  }
+
+  > div {
+    margin-bottom: 22px;
+  }
+
+  &.purple {
+    // margin-top: 20px;
+    background: $dark-purple;
+    color: white;
+  }
+  
 }
+
+// Aside for pagelinks
 
 .pagelink, .film-link  {
   height: 180px;
-  position: relative;
-
   a {
     position: absolute;
     bottom: 0px;
     padding: 8px 22px;
     color: white;
     width: 100%;
-    @include border-bottom-radius(3px);
-    
+    @include border-bottom-radius(3px);  
+
+    &.green {
+      // background-color: rgb(0, 174, 199);
+       background-color: rgb(70, 190, 147);
+    }
+
+    &.blue {
+       background-color: rgb(0, 174, 199);
+    }
   }
-
-
-}
-
-.film-link a {
-  background-color: rgb(0, 174, 199);
-}
-
-.pagelink a {
- background-color: rgb(70, 190, 147);
 }
 
 
-.purple {
-  margin-top: 20px;
-  background: $dark-purple;
-  color: white;
-  h2 {
-    margin-bottom: 22px;
-  }
-  button.red.large { height: 41px; width: 95%; }
 
-  > div {
-    margin-bottom: 22px;
-  }
-
-}
-
-aside.purple.col-four.pull-right.content {
-margin-top: 10px;
-}

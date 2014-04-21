@@ -15,15 +15,12 @@
  @include media($mobile) { // As defined in _grid-settings.scss
     width: 100%;
   }
-
-  // z-index: 2222;
 }
 
 .swipe-wrap {
   overflow: hidden;
   position: relative;
-  // margin-bottom: -6px;
-  // margin-right: -1px;
+
 }
 
 .swipe-wrap > div {
@@ -38,7 +35,6 @@
   span.container {
     position: absolute;
     display: inline-block;
-    // z-index: 9999;
     top: 87%;
     width: 46%;
     color: white;

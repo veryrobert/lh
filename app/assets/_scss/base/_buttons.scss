@@ -1,8 +1,20 @@
 
+@mixin button-hover($base-color, $hover-color: darken($base-color, 50)) {
+  background-color: $base-color;
 
+  &:visited {
+    background-color: $base-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    outline: none;
+  }
+}
 
 button {
-  font: 12px normal $helvetica;
+  font: 12px normal "sansfont", $helvetica;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 12px 15px;
@@ -10,68 +22,50 @@ button {
   text-align: left;
   color: white;
   @include transition(all 0.2s ease-in-out);
-}
-
-
-
-
-
-button {
-
+  @include border-radius(2px);
 
   &.red {
-    background-color: #CA3743;
-    &:focus, &:hover {
-    background-color: darken(#CA3743, 5%);
-  }
+    @include button-hover(#CA3743, #CA3743);
   }
   &.green {
-    background-color: #4ac9a6;
-    &:focus, &:hover {
-    background-color: darken(#4ac9a6, 5%);
-  }
+    @include button-hover(#4ac9a6, #4ac9a6);
   }
   &.purple {
-    background-color: #3d4154;
-      &:focus, &:hover  {
-    background-color: darken(#3d4154, 5%);
-  }
+    @include button-hover(#3d4154, #3d4154);
   }
   &.grey {
-
-    background-color: darken(#ccc, 5%);
+    @include button-hover(#ccc, #ccc);
   }
-}
 
-aside {
-  button.large {
+  &.full-width-button {
     width: 100%;
-    max-width: 320px;
   }
-}
 
-button.large.readmore {
-  width: 100%;
-  max-width: 680px;
-  text-align: center;
+  &:nth-child(2) {
+    margin-top: 12px;
+  }
+
 }
 
 .swipe-wrap button {
   display: block;
   margin: 20px 0;
+  min-width: 180px;
 }
+
+.season-tickets  {
+  .buttons {
+  min-height: 112px;
+  }
+}
+
+.buttons button {
+  position: relative;
+  top: 22px;
+}
+
 
 .buttons button.notify {
   position: relative;
-  top: 63px;
+  top: 73px;
 }
-
-.buttons button.season {
-  margin-top: 4px;
-}
-
-.season-tickets  .buttons {
-  min-height: 106px;
-}
-
-

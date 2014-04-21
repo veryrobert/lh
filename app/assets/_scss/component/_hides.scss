@@ -1,4 +1,5 @@
 body {
+
 	  @include media($below-980) {
      
 		.hide-980 {
@@ -10,5 +11,112 @@ body {
      		.hide-730 {
 			display: none;
 		}
+      } 
+
+      @include media($medium-screen-up) {
+     		.hide-730 {
+			display: none;
+		}
+      }  
+
+      @include media($mobile) {
+     		.hide-720 {
+			display: none;
+		}
+
+			.show-720 {
+			display: block;
+		}
+
       }
+
+}
+
+
+// Mobile Styling
+
+
+@include media($mobile) {
+
+	aside.booking.slider {
+		width: 100%;
+		@include border-radius(2px);
+	}
+
+	#showings-home > div {
+		margin: 0px;
+		border-bottom: solid 1px #ececec;
+		padding-bottom: 22px;
+		@include border-radius(0px);
+	}
+
+	.primary-content section#showings-home {
+		margin-top: 0px;
+		@include border-radius(0px);
+	}
+	     		
+	.mobile-title {
+		h3 {
+			margin: 0px;
+			padding: 2px 0px;
+		}
+
+		h6 {
+			margin-bottom: 18px;
+		}
+	}
+
+	ul.film-info {
+		height: 160px;
+		border-left: 0px;
+		margin-top: 0px;
+		right: 22px;
+
+		.rating {
+			// height: 70px;
+		}
+
+		.time {
+			border-bottom: solid 1px #ececec;
+		}
+
+	}
+
+	ul.film-times {
+		width: 100%;
+		
+		li {
+			padding: 1.1%;
+		}
+
+	
+	}
+	
+	.accordion-tabs-minimal li.tab-header-and-content a.tab-link {
+
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 5px;
+		line-height: 34px;
+		color: white;
+		background: $dark-purple;
+		margin-top: 0px;
+		border-bottom: solid 1px darken($dark-purple, 10%);
+		@include border-radius(0px);
+
+		&.is-active {
+		margin-bottom: 0px;
+		@include border-bottom-radius(0px);
+		}
+	}
+
+	.accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
+		@include border-top-radius(0px);
+	}
+
+	.arrow-down.is-active  {
+		display: none;
+	}
+
 }
