@@ -1,42 +1,44 @@
+
+
+
 button {
-  padding: 11px 15px 12px 15px;
-  text-align: left;
+  font: 12px normal $helvetica;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 15px;
   border: none;
-  @include border-radius(2px);
-  color: #fff;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  height: 38px;
-  font-weight: normal;
-  &.large {
-    width: 100%;
-    max-width: 180px;
-    display: inline-block;
-    overflow: hidden;
-    @include sprite(sprite-2, -10%, -482px, auto, 290px);
-    text-indent: 0px;
-  }
+  text-align: left;
+  color: white;
+  @include transition(all 0.2s ease-in-out);
+}
+
+
+
+
+
+button {
+
+
   &.red {
     background-color: #CA3743;
-    &:focus {
+    &:focus, &:hover {
     background-color: darken(#CA3743, 5%);
   }
   }
   &.green {
     background-color: #4ac9a6;
-    &:focus {
+    &:focus, &:hover {
     background-color: darken(#4ac9a6, 5%);
   }
   }
   &.purple {
     background-color: #3d4154;
-      &:focus {
+      &:focus, &:hover  {
     background-color: darken(#3d4154, 5%);
   }
   }
   &.grey {
-    // background-color: #3d4154;
-    color: #ccc;
+
     background-color: darken(#ccc, 5%);
   }
 }
@@ -73,17 +75,3 @@ button.large.readmore {
 }
 
 
-button {
-  @include transition(all 0.2s ease-in-out);
-  font-size: 12px; // 16 * 0.750 = 12px
-  font-weight: normal;
-  letter-spacing: 0.25px;
-  text-transform: uppercase;
-  font-family: sansfont;
-  line-height: 14px;
-  &:focus {
-    box-shadow: none;
-    outline: none;
-    background-color: darken(#CA3743, 5%);
-  }
-}

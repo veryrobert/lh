@@ -81,7 +81,7 @@ $('.up').click(function(){
   $(this).toggleClass('active');
 });
 
-$('.summary button.readmore').click(function(){
+$('button.readmore').click(function(){
   $('div.none').slideToggle();
 
      if($(this).text() == 'Read More'){
@@ -305,7 +305,7 @@ $(document).ajaxSuccess(function() {
       $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
     });
 
-  $(".js-vertical-tab-content:first").show();
+    $(".js-vertical-tab-content:first").show();
 
 });
 

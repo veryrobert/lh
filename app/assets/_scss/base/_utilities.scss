@@ -71,5 +71,10 @@
 }
 
 .no-margin-t {
-  margin-top: 0px;
+  margin-top: 0px !important;
+}
+
+
+.inline-block {
+  @include inline-block;
 }

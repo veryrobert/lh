@@ -16,7 +16,7 @@
 @import "base/variables";
 @import "base/extends/base";
 @import "base/mixins/base";
-@import "base/utilities";
+
 @import "base/typography";
 @import "base/forms";
 @import "base/buttons";
@@ -27,6 +27,8 @@
 @import "base/fonts";
 @import "base/library";
 @import "base/application";
+
+@import "base/utilities";
 
 
 /* Components
