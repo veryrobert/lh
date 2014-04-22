@@ -21,6 +21,8 @@ Clean Up Style Sheets:
 
 ☐ Inside Ajax About Pages
 
+☐ Button Styles
+
 
 Lighthouse: Todo:
  ✔ Mark-up @done (14-04-21 15:01)
@@ -41,56 +43,55 @@ Components:
  ☐ Horizontal Tabs
  ✔ Text Box Full Width with Header & Readmore @done (14-04-20 11:21)
  ✔ Text Box with Title Dates and Price Details @done (14-04-20 11:21)
- ☐ Text Box with image color bar for title
- ☐ Box with Read More
+ ✔ Text Box with image color bar for title @done (14-04-22 14:26)
+ ✔ Box with Read More @done (14-04-22 14:26)
  ☐ Season Title Image Full width 300px Height
  ☐ Virtual Tour
  ☐ Light Box Modal
 
 
-         Home page:
-       ✔ Home Page Slider @done (14-04-20 11:22)
-       ✔ Home 3 Piece Slider @done (14-04-20 11:22)
-       ✔ Book Now @done (14-04-20 11:22)
-       ✔ Now Showing tabs @done (14-04-20 11:22)
-       
-       Aside:
-       ✔ Social Bar @done (14-04-20 11:22)
-       ✔ Advert Template @done (14-04-20 11:22)
-       ✔ Newsletter Sign-up @done (14-04-20 11:22)
-       ✔ Side Bar Buy Tickets with Button @done (14-04-20 11:22)
-       ☐ Booking Options
+Home page:
+✔ Home Page Slider 
+✔ Home 3 Piece Slider 
+✔ Book Now @done 
+✔ Now Showing tabs
 
-       Cinema Listings:
-       ✔ Now Showing – Top Image @done (14-04-20 11:22)
-       ✔ Full Page Tabs @done (14-04-20 11:22)
-           ✔ Style 1 – Films @done (14-04-20 11:22)
-           ✔ Style 2 – Seasons & Specials @done (14-04-20 11:22)
-           ✔ Style 3 – Arts Events @done (14-04-20 11:22)
-      
-       Events:
-       ✔ Events Top Page @done (14-04-20 11:22)
-       ✔ Full Page Tabs @done (14-04-21 15:01)
-          ✔ Style 1 – Events & Seasons @done (14-04-21 15:01)
-          ✔ Style 2 – Regular Events @done (14-04-21 15:01)
-       ✔ Events Archive Top Banners @done (14-04-20 11:22)
-       ✔ Full Page Text Banner @done (14-04-20 11:22)
-       ✔ Image Advert Grid @done (14-04-20 11:22)
-       
-       About Us:
-       ✔ Sidebar Tabs – Seven Types @done (14-04-20 11:23)
-          ✔ Style One – Grid of images/text @done (14-04-20 11:23)
+Aside:
+✔ Social Bar
+✔ Advert Template
+✔ Newsletter Sign-up
+✔ Side Bar Buy Tickets with Button
+✔ Booking Options
 
-       Your Visits:
-       ✔ Sidebar Tabs – Seven Types @done (14-04-21 15:01)
-          ✔ Style One – Grid of images/text @done (14-04-21 15:01)
-          ✔ Style Two – Venue hire with form @done (14-04-21 15:01)
-       
- 
+Cinema Listings:
+✔ Now Showing – Top Image
+✔ Full Page Tabs
+✔ Style 1 – Films
+✔ Style 2 – Seasons & Specials
+✔ Style 3 – Arts Events
+
+Events:
+✔ Events Top Page 
+✔ Full Page Tabs
+✔ Style 1 – Events & Seasons 
+✔ Style 2 – Regular Events
+✔ Events Archive Top Banners
+✔ Full Page Text Banner 
+✔ Image Advert Grid
+
+About Us:
+✔ Sidebar Tabs – Seven Types
+✔ Style One – Grid of images/text
+
+Your Visits:
+✔ Sidebar Tabs – Seven Types
+✔ Style One – Grid of images/text
+✔ Style Two – Venue hire with form
 
 Elements:
- ☐ Button Styles
- ☐ Footer
+ ✔ Button Styles
+ ✔ Footer
 
 
 Mobile:
+a

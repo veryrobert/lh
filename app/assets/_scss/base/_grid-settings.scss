@@ -77,8 +77,17 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 
 // inside stuff
 
+
+
+
 .two-eight {
    @include span-columns(2 of 8);
+     @include media($mobile) {
+     @include span-columns(3 of 6);
+      &:nth-child(2) {
+        margin-right: 0px;
+      }
+    }
 }
 
 .three-eight {
@@ -87,6 +96,12 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 
 .four-eight {
    @include span-columns(4 of 8);
+     @include media($mobile) {
+       @include span-columns(6 of 6);
+          &:nth-child(2) {
+          margin-right: 0px;
+        }
+      }
 }
 
 .five-eight {
@@ -109,6 +124,11 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 
 .one-twelve {
   @include span-columns(1 of 12); 
+
+  @include media($mobile) {
+     @include span-columns(6 of 6);
+  }
+
 }
 
 .two-twelve {
@@ -118,9 +138,9 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 .three-twelve {
   @include span-columns(3 of 12); 
 
-  @include media($below-980) {
-     @include span-columns(4 of 12); 
-  }
+ @include media($mobile) {
+     @include span-columns(6 of 6);
+ }
 
 }
 
@@ -131,12 +151,16 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
      @include span-columns(5 of 12); 
   }
 
-
 }
 
 
 .five-twelve {
-  @include span-columns(5 of 12); 
+  @include span-columns(5 of 12);
+
+     @include media($mobile) {
+     @include span-columns(6 of 6);
+ }
+ 
 }
 
 
@@ -145,7 +169,12 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 }
 
 .seven-twelve {
-  @include span-columns(7 of 12); 
+  @include span-columns(7 of 12);
+
+   @include media($mobile) {
+     @include span-columns(6 of 6);
+ }
+
 }
 
 
@@ -169,3 +198,15 @@ img.one-twelve {
   }
 
 }
+
+
+.three-eight, .four-eight, .six-eight, ul.bullets {
+
+  @include media($mobile) { // As defined in _grid-settings.scss
+    @include span-columns(6 of 6);
+  }
+
+}
+
+
+

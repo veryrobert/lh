@@ -454,7 +454,7 @@ li.times {
       padding: 0px 0px 1px 0px;
       margin-bottom: 3px;
       height: 22px;
-      width: 58px;
+      width: 57px;
       text-align: center;
     }
   }
@@ -575,7 +575,8 @@ section.synopsis, aside.social {
 }
 
 .film-review {
-  overflow: hidden;
+  // overflow: hidden;
+  min-height: 284px;
   position: relative;
 }
 
@@ -632,7 +633,7 @@ section.synopsis, aside.social {
   right: -22px;
   margin: 0px;
   top: 6px;
-  padding: 22px;
+  // padding: 22px;
 }
 
 #single-film .summary, article {

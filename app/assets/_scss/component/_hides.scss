@@ -1,122 +1,379 @@
 body {
+  @include media($below-980) {
+    .hide-980 {
+      display: none;
+    }
+  }
 
-	  @include media($below-980) {
-     
-		.hide-980 {
-			display: none;
-		}
+  @include media($below-730) {
+    .hide-730 {
+      display: none;
+    }
+  }
 
-      }
-      @include media($below-730) {
-     		.hide-730 {
-			display: none;
-		}
-      } 
+  @include media($medium-screen-up) {
 
-      @include media($medium-screen-up) {
-     		.hide-730 {
-			display: none;
-		}
-      }  
+  .menu-toggle {
+    display: none;
+  }
 
-      @include media($mobile) {
-     		.hide-720 {
-			display: none;
-		}
+  
 
-			.show-720 {
-			display: block;
-		}
+    .hide-730 {
+      display: none;
+    }
+  }
 
-      }
-
+  @include media($mobile) {
+    .hide-720 {
+      display: none;
+    }
+    .show-720 {
+      display: block;
+    }
+  }
 }
 
-
-// Mobile Styling
-
+// Mobile Styling Home page
+////////////////////////////////////////////////////////////////////////////
 
 @include media($mobile) {
 
-	aside.booking.slider {
-		width: 100%;
-		@include border-radius(2px);
-	}
 
-	#showings-home > div {
-		margin: 0px;
-		border-bottom: solid 1px #ececec;
-		padding-bottom: 22px;
-		@include border-radius(0px);
-	}
+          .menu-toggle {
+          display: block;
+        }
 
-	.primary-content section#showings-home {
-		margin-top: 0px;
-		@include border-radius(0px);
-	}
-	     		
-	.mobile-title {
-		h3 {
-			margin: 0px;
-			padding: 2px 0px;
-		}
+        
 
-		h6 {
-			margin-bottom: 18px;
-		}
-	}
+        header {
+          height: auto;
+        }
+        .nav-logo {
+          .wrapper {
+            padding: 0px;
+          }
+        }
+        ul.primaryMenu {
+          background: $dark-purple;
+          display: none;
+          // position: relative;
+          float: left;
+          z-index: 99999;
+          border-right: 0px !important;
+          height: auto;
+          width: 100%;
+          margin-top: 0px;
+          // padding-top: 4px;
+          li {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            line-height: 30px;
+            width: 100%;
+            // margin-left: -6%;
+            padding-left: 22px;
+            text-align: left;
+            padding-top: 2px;
+            padding-bottom: 5px;
+            border-bottom: solid 1px darken($dark-purple, 5%);
+            &:last-child {
+            	border-bottom: 0px;
+            }
+            a {
+              margin: 0px;
+              padding: 0px;
+              color: white;
+            }
+          }
+        }
 
-	ul.film-info {
-		height: 160px;
-		border-left: 0px;
-		margin-top: 0px;
-		right: 22px;
+      ul.primaryMenu li > ul.subMenu {
+      	display: none;
+      	transition: none;
+       	-moz-transition: none;
+       	-webkit-transition: none;
+      	visibility: visible;
+      	// display: block;
+      	margin: 0;
+      	padding: 0;
+      	opacity: 1;
+      	position: relative;
+      	top: 6px;
+      	// background: $dark-purple;
+      	margin-left: -22px;
+      	border-radius: 0px;
 
-		.rating {
-			// height: 70px;
-		}
+      	.arrow-up {
+      		display: none;
+      	}
 
-		.time {
-			border-bottom: solid 1px #ececec;
-		}
+      	li a, li {
+      		display: block;
+      	}
 
-	}
+      	li a:hover {
+      		margin: 0;
+         		padding: 0;
+         		height: auto;
+         		width: auto;
+         		background: none;
+         		display: block;
+      	}
 
-	ul.film-times {
-		width: 100%;
-		
-		li {
-			padding: 1.1%;
-		}
+      }
 
-	
-	}
-	
-	.accordion-tabs-minimal li.tab-header-and-content a.tab-link {
-
-		text-align: center;
-		font-weight: bold;
-		font-size: 16px;
-		margin-top: 5px;
-		line-height: 34px;
-		color: white;
-		background: $dark-purple;
-		margin-top: 0px;
-		border-bottom: solid 1px darken($dark-purple, 10%);
-		@include border-radius(0px);
-
-		&.is-active {
-		margin-bottom: 0px;
-		@include border-bottom-radius(0px);
-		}
-	}
-
-	.accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
-		@include border-top-radius(0px);
-	}
-
-	.arrow-down.is-active  {
-		display: none;
-	}
+        ul.primaryMenu > li:after, ul.menu > li:after {
+          content: '';
+        }
+        .yellow .wrapper {
+          padding: 0px;
+          margin: 0px;
+        }
+        h1.logo {
+          margin-top: -6px;
+          padding: 22px 22px;
+          border: 0px;
+        }
+        h1.logo a {
+          @include transform(scale(0.8, 0.8));
+          margin-left: -30px;
+          margin-top: 10px;
+        }
+        aside.booking.slider {
+          width: 100%;
+          @include border-radius(2px);
+        }
+        .jcarousel-wrapper {
+          width: 83.4%;
+        }
+        #showings-home > div {
+          margin: 0px;
+          border-bottom: solid 1px #ececec;
+          padding-bottom: 22px;
+          @include border-radius(0px);
+        }
+        .primary-content section#showings-home {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          @include border-radius(0px);
+        }
+        .mobile-title {
+          h3 {
+            margin: 0px;
+            padding: 2px 0px;
+          }
+          h6 {
+            margin-bottom: 18px;
+          }
+        }
+        ul.film-info {
+          height: 160px;
+          border-left: 0px;
+          margin-top: 0px;
+          right: 22px;
+          .rating {
+            // height: 70px;
+         
+          }
+          .time {
+            border-bottom: solid 1px #ececec;
+          }
+        }
+        ul.film-times {
+          width: 100%;
+          li {
+            padding: 1.1%;
+          }
+        }
+        .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+          margin-top: 5px;
+          line-height: 34px;
+          color: white;
+          background: $dark-purple;
+          margin-top: 0px;
+          border-bottom: solid 1px darken($dark-purple, 10%);
+          @include border-radius(0px);
+          &.is-active {
+            margin-bottom: 0px;
+            @include border-bottom-radius(0px);
+          }
+        }
+        .accordion-tabs-minimal li.tab-header-and-content:last-child a.tab-link {
+          @include border-top-radius(0px);
+        }
+        .arrow-down.is-active {
+          display: none;
+        }
+        ul.social {
+          width: 100%;
+          li {
+            width: 24%;
+          }
+        }
+        footer .links {
+          width: 60%;
+        }
+        .swipe span.container {
+          top: 87%;
+          width: 88%;
+          p {
+            width: 114%;
+          }
+        }
+        footer {
+          padding-top: 20px;
+          margin-top: 30px;
+        }
+        footer .logos li {
+          display: block;
+          a {
+            @include transform(scale(0.8, 0.8));
+          }
+          &:last-child a {
+            background-position: 64% -229px;
+          }
+        }
 
 }
+
+
+      // Mobile Styling  Film Page
+      ////////////////////////////////////////////////////////////////////////////
+
+@include media($mobile) {
+
+      #single-film .movie-info, #payment .movie-info {
+        position: relative;
+        height: auto;
+        min-height: 100px;
+      }
+
+      #single-film .info, #payment .info {
+        position: relative;
+        bottom: 0px;
+        margin-top: 10px;
+      }
+
+      #single-film .notify {
+        width: 100%;
+      }    
+
+    img.one-twelve {
+      width: 130px;
+    }
+
+    .three-twelve > h3, .three-twelve > p, .all-listing .booking-list, .five-twelve > h3, .five-twelve > p, {
+      margin-left: 0px;
+      padding-left: 0px;
+      border-left: 0px;
+    }
+
+    .all-listing .booking-list {
+      ul {
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+
+       .all-listing .booking-list div.day, .all-listing .booking-list h3 {
+        margin: 0px -22px;
+        border-left: 0px;
+        padding: 10px 22px;
+      }
+
+      .bottom-row {
+        display: none;
+      }
+
+      .listings-summary {
+          position: relative;
+          top: 72px;
+          height: 290px;
+      }
+
+      div.five-twelve.listings-summary {
+          position: relative;
+          margin: 10px 0;
+          height: auto;
+          top: 10px;
+      }
+
+
+  .primary-content section.show-listings  {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .all-listing {
+
+    &:first-of-type {
+      @include border-top-radius(0px);
+    }
+
+    margin-bottom: 0px;
+  }
+
+  .season-tickets {
+    position: relative;
+    right: 0px;
+    padding: 0px;
+    border-left: 0px;
+
+    .more-info {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+  
+  }
+
+
+  .show-listings {
+    img.three-twelve.pull-left {
+    width: 67%;
+    margin-bottom: 40px;
+    
+  }
+  }
+
+  .single-button-mobile .buttons {
+    min-height: 50px;
+
+    button.notify {
+    position: relative;
+    top: 13px;
+    }
+
+  }
+
+  ul.bullets {
+    width: 100%;
+  }
+
+  input.four-eight, textarea.four-eight {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  label.two-eight {
+    width: 100%;
+  }
+
+  button.enquirey {
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  } 
+
+  .masonry .item {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+
