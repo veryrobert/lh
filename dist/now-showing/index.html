@@ -1,19 +1,661 @@
-<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Lighthouse – Now Showing</title><meta name=description content=""><meta name=viewport content="width=device-width, initial-scale=1"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=http://veryrobert.github.io/lh/assets/css/78a2.main.css><script src=http://veryrobert.github.io/lh/assets/js/a52a.modernizr.js></script></head><body><!--[if lt IE 7]>
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lighthouse – Now Showing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({app,.tmp}) /assets/css/main.css -->
+<link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+<link rel="stylesheet" href="/assets/css/syntax.css">
+<link rel="stylesheet" href="/assets/css/screen.css">
+<!-- endbuild -->
+
+    
+    <!-- build:js({app,.tmp}) /assets/js/modernizr.js -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><!-- <div class="darken-left"></div>
-<div class="darken-right"></div> --><header><div class="full-width yellow"><div class=wrapper><nav id=firstNav><form action=# method=post id=newsletter name=lhNewsletter class="validate three-twelve hide-980" target=_blank novalidate><input type=email onfocus="this.placeholder = ''" value="" name=EMAIL class=email id=EMAIL placeholder="Newsletter Signup" required><input type=submit value="" name=GO id=subscribe class=button></form><ul class="menu four-twelve hide-730"><li><a class=ajaxCall href="">Venue Hire</a></li><li><a class=ajaxCall href="">Contact us</a></li><li><a class=ajaxCall href="">MemberShip</a></li></ul><div class="cart pull-right"><h6>0</h6><a class=cart-icon href="">Cart</a></div><ul class="social pull-right three-twelve"><li><a class="social twitter" href=""></a></li><li><a class="social facebook" href=""></a></li><li><a class="social youtube" href=""></a></li><li><a class="social instagram" href=""></a></li></ul></nav></div></div><div class=full-widt><div class=wrapper><nav id=secondNav><h1 class=logo><a href=index.html>LightHouse Cinema</a></h1><ul class=primaryMenu><li><a class=ajaxCall href=#>Now Showing</a></li><li><a class=ajaxCall href=#>Coming Soon</a></li><li><a class=ajaxCall href=#>Events</a></li><li class=dropdown><a class=ajaxCall href=#>Eat &amp; Drink</a><ul class=subMenu><div class=arrow-up></div><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li></ul></li><li class=dropdown><a class=ajaxCall href=#>About Us</a><ul class=subMenu><div class=arrow-up></div><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li></ul></li><li class=dropdown><a class=ajaxCall href=#>Your Visits</a><ul class=subMenu><div class=arrow-up></div><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li><li><a class=ajaxCall href=#>Sub Menu</a></li></ul></li></ul></nav></div></div></header><!-- 
+    <![endif]-->
+
+
+
+    
+<!-- <div class="darken-left"></div>
+<div class="darken-right"></div> -->
+
+    <header>
+       <div class="full-width yellow"> 
+            <div class="wrapper">
+
+                <nav id="firstNav">
+                     
+                     <form action="#" 
+                        method="post" id="newsletter" name="lhNewsletter" class="validate three-twelve hide-980" target="_blank" novalidate>
+                            <input type="email"  onfocus="this.placeholder = ''" value="" name="EMAIL" class="email" id="EMAIL" placeholder="Newsletter Signup" required>
+                            <input type="submit" value="" name="GO" id="subscribe" class="button">
+                        </form> 
+        
+                        <ul class="menu four-twelve">
+                            <li><a class="ajaxCall" href="/about/venue-hire/">Venue Hire</a></li>
+                            <li><a class="ajaxCall" href="">Contact us</a></li>
+                            <li><a class="ajaxCall" href="">MemberShip</a></li>
+                        </ul>
+
+                        <div class="cart pull-right">
+                            <h6>0</h6>
+                            <a class="cart-icon" href="">Cart</a>
+                        </div>
+
+                        <ul class="social pull-right three-twelve">
+                            <li><a class="social twitter" href=""></a></li>
+                            <li><a class="social facebook" href=""></a></li>
+                            <li><a class="social youtube" href=""></a></li>
+                            <li><a class="social instagram" href=""></a></li>
+                        </ul>
+                        
+                </nav>
+             </div>
+         </div>
+
+
+        <div class="full-width nav-logo"> 
+           <div class="wrapper">
+                <nav id="secondNav">
+                <h1 class="logo"><a href="/">LightHouse Cinema</a></h1>
+
+                <button class="menu-toggle">Click Me</button>
+
+                <ul class="primaryMenu">
+                    <li><a class="ajaxCall" href="/now-showing/">Now Showing</a></li>
+                    <li><a class="ajaxCall" href="/coming-soon/">Coming Soon</a></li>
+                    <li><a class="ajaxCall" href="/events/">Events</a></li>
+                    <li class="dropdown"><a href="#">Eat &amp; Drink</a> 
+                    <span class="arrow-down"></span>   
+
+                        <ul class="subMenu subMenu-1">
+                            <div class="arrow-up"></div>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">About Us</a>
+                    <span class="arrow-down"></span>    
+                        <ul class="subMenu subMenu-2">
+                            <div class="arrow-up"></div>
+                            <li><a class="ajaxCall" href="/about/our-story/">Our Story</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a  href="#">Your Visits</a>
+                    <span class="arrow-down"></span>   
+                        <ul class="subMenu subMenu-3">
+                            <div class="arrow-up"></div>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                            <li><a class="ajaxCall" href="#">Sub Menu</a></li>
+                        </ul>
+                    </li>   
+                </ul>
+
+            </nav>
+
+            </div>
+        </div>
+
+    </header>
+<!-- 
 
 <div class="tooltip-item">
   Hover for Tooltip
   <div class="tooltip">
     <p>Tooltip text</p>
   </div>
-</div> --><div id=container><div id=guts><div class="wrapper right-aside primary-content"><div class="page-banner col-twelve" style="background-image: url(http://www.placekitten.com/1020/310); background-size: cover; float: left; list-style: none; background-position: 50% 50%"><h1>Page Title</h1></div></div><div class="wrapper primary-content"><ul class=accordion-tabs-minimal><li class=tab-header-and-content><a class="tab-link is-active" href="">All<span class="arrow-down is-active"></span></a><section class=show-listings><div class="col-twelve content all-listing"><div class=film-review><h6 class=category>Premier</h6><img class="pull-left one-twelve" src=http://www.placekitten.com/95/130 alt="" class=thumb><div class="pull-left three-twelve"><h3>Movie Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a href="" class=readmore>Read More ></a></p></div><div class=modal><label for=modal-1><div class="btn js-btn red pull-left">Click for Modal</div></label><input class=modal-state id=modal-1 type=checkbox><div class=modal-window><div class=modal-inner><label class=modal-close for=modal-1></label><iframe width=640 height=360 src=//www.youtube.com/embed/FNQowwwwYa0 frameborder=0 allowfullscreen></iframe></div></div></div></div><div class="booking-list seven-twelve pull-right"><h3>Buy Tickets</h3><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class="times void"><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div></div><div class=bottom-row><div class=one>15</div><div class=one>145 min</div><div class=two><h6 class=no-margin-b><strong>Director:</strong> Ron Howard</h6><h6 class=no-margin-b><strong>Title:</strong> Ron Howard</h6></div></div></div><div class="col-twelve content all-listing"><div class=film-review><h6 class=category>Premier</h6><img class="pull-left one-twelve" src=http://www.placekitten.com/95/130 alt="" class=thumb><div class="pull-left three-twelve"><h3>Movie Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a href="" class=readmore>Read More ></a></p></div><div class=modal><label for=modal-1><div class="btn js-btn red pull-left">Click for Modal</div></label><input class=modal-state id=modal-1 type=checkbox><div class=modal-window><div class=modal-inner><label class=modal-close for=modal-1></label><iframe width=640 height=360 src=//www.youtube.com/embed/FNQowwwwYa0 frameborder=0 allowfullscreen></iframe></div></div></div></div><div class="booking-list seven-twelve pull-right"><h3>Buy Tickets</h3><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class="times void"><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div></div><div class=bottom-row><div class=one>15</div><div class=one>145 min</div><div class=two><h6 class=no-margin-b><strong>Director:</strong> Ron Howard</h6><h6 class=no-margin-b><strong>Title:</strong> Ron Howard</h6></div></div></div></section></li><li class=tab-header-and-content><a class=tab-link href="">TODAY</a><section class=show-listings><div class="col-twelve content all-listing"><div class=film-review><h6 class=category>Premier</h6><img class="pull-left one-twelve" src=http://www.placekitten.com/95/130 alt="" class=thumb><div class="pull-left three-twelve"><h3>Movie Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a href="" class=readmore>Read More ></a></p></div><div class=modal><label for=modal-1><div class="btn js-btn red pull-left">Click for Modal</div></label><input class=modal-state id=modal-1 type=checkbox><div class=modal-window><div class=modal-inner><label class=modal-close for=modal-1></label><iframe width=640 height=360 src=//www.youtube.com/embed/FNQowwwwYa0 frameborder=0 allowfullscreen></iframe></div></div></div></div><div class="booking-list seven-twelve pull-right"><h3>Buy Tickets</h3><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class="times void"><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div></div><div class=bottom-row><div class=one>15</div><div class=one>145 min</div><div class=two><h6 class=no-margin-b><strong>Director:</strong> Ron Howard</h6><h6 class=no-margin-b><strong>Title:</strong> Ron Howard</h6></div></div></div></section></li><li class=tab-header-and-content><a class=tab-link href="">Specials</a><section class=show-listings><div class="col-twelve content all-listing"><div class=film-review><h6 class=category>Premier</h6><img class="pull-left one-twelve" src=http://www.placekitten.com/95/130 alt="" class=thumb><div class="pull-left three-twelve"><h3>Movie Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a href="" class=readmore>Read More ></a></p></div><div class=modal><label for=modal-1><div class="btn js-btn red pull-left">Click for Modal</div></label><input class=modal-state id=modal-1 type=checkbox><div class=modal-window><div class=modal-inner><label class=modal-close for=modal-1></label><iframe width=640 height=360 src=//www.youtube.com/embed/FNQowwwwYa0 frameborder=0 allowfullscreen></iframe></div></div></div></div><div class="booking-list seven-twelve pull-right"><h3>Buy Tickets</h3><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class="times void"><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div><div class=day><h6>Tuesday 28 May 2013</h6><ul><li class=times><a href="">12:00</a></li></ul></div></div><div class=bottom-row><div class=one>15</div><div class=one>145 min</div><div class=two><h6 class=no-margin-b><strong>Director:</strong> Ron Howard</h6><h6 class=no-margin-b><strong>Title:</strong> Ron Howard</h6></div></div></div></section></li></ul></div></div></div><footer id=footer-primary class=footer-primary><div class=wrapper><ul class=logos><li><a href="">Europa Cinemas</a></li><li><a href="">Element Pictures</a></li><li><a href="">Volta</a></li></ul><ul class=links><li><a href=#>Twitter</a></li><li><a href=#>Facebook</a></li><li><a href=#>Youtube</a></li><li><a href=#>Instagram</a></li><br><li><a href=#>Privacy</a></li><li><a href=#>Terms &amp; Conditions</a></li><br><li><a href=#>Copyright 2014 LightHouse</a></li></ul></div></footer><!--[if lte IE 8]>
-      <script src="http://veryrobert.github.io/lh/assets/js/5dfd.ie8.js"></script>
+</div> -->
 
-    <![endif]--><script src=http://veryrobert.github.io/lh/assets/js/5d7f.app.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+
+
+
+  <div id="container">
+    
+    <div id="guts">
+      
+        <div class="wrapper right-aside primary-content">
+	<div class="page-banner col-twelve" style="background-image: url(http://placehold.it/1020x80/CA3743/ffffff.png); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
+		<h1>Page Title</h1>
+	</div>
+</div>
+
+
+
+
+
+<div id="now-showing" class="wrapper primary-content">
+
+		<ul class="accordion-tabs-minimal">
+
+		<li class="tab-header-and-content">
+			<a  class="tab-link is-active" href="">All<span class="arrow-down is-active"></span></a>
+			<section class="show-listings">
+				
+
+	<div class="col-twelve content all-listing">
+		<div class="film-review">
+			<h6 class="category">Premier</h6>
+			<img class="pull-left one-twelve" src="http://placehold.it/120x170/3d4154/ffffff.png" alt="" class="thumb">
+
+			<div class="modal">
+	<label for="modal-1">
+		<div class="btn js-btn red pull-left">TRAILER</div>
+	</label>
+
+	<div class="modal-window">
+		<div class="modal-inner">
+			<div class="modal-close"></div>
+			<iframe width="640" height="360" src="//www.youtube.com/embed/FNQowwwwYa0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+
+			<div class="pull-left three-twelve listings-summary">
+				<h3>Movie Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a class="read-more" href="#">Read More </a></p>
+			</div>
+
+			
+		</div>
+
+		<div class="booking-list seven-twelve pull-right">
+			<h3>Buy Tickets</h3>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times void"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="bottom-row">
+			<div class="rating">15</div>
+			<div class="time" > 145 min</div>
+			<div class="two">
+				<h6 class="no-margin-b"><strong>Director:</strong> Ron Howard</h6>
+				<h6 class="no-margin-b"><strong>Title:</strong> Ron Howard</h6>
+
+			</div>
+		</div>
+
+	</div>
+
+
+				
+
+	<div class="col-twelve content all-listing">
+		<div class="film-review">
+			<h6 class="category">Premier</h6>
+			<img class="pull-left one-twelve" src="http://placehold.it/120x170/3d4154/ffffff.png" alt="" class="thumb">
+
+			<div class="modal">
+	<label for="modal-1">
+		<div class="btn js-btn red pull-left">TRAILER</div>
+	</label>
+
+	<div class="modal-window">
+		<div class="modal-inner">
+			<div class="modal-close"></div>
+			<iframe width="640" height="360" src="//www.youtube.com/embed/FNQowwwwYa0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+
+			<div class="pull-left three-twelve listings-summary">
+				<h3>Movie Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a class="read-more" href="#">Read More </a></p>
+			</div>
+
+			
+		</div>
+
+		<div class="booking-list seven-twelve pull-right">
+			<h3>Buy Tickets</h3>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times void"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="bottom-row">
+			<div class="rating">15</div>
+			<div class="time" > 145 min</div>
+			<div class="two">
+				<h6 class="no-margin-b"><strong>Director:</strong> Ron Howard</h6>
+				<h6 class="no-margin-b"><strong>Title:</strong> Ron Howard</h6>
+
+			</div>
+		</div>
+
+	</div>
+
+
+			</section>
+		</li>
+
+		<li class="tab-header-and-content">
+			<a  class="tab-link" href="">TODAY</a>
+			<section class="show-listings">
+				
+
+	<div class="col-twelve content all-listing">
+		<div class="film-review">
+			<h6 class="category">Premier</h6>
+			<img class="pull-left one-twelve" src="http://placehold.it/120x170/3d4154/ffffff.png" alt="" class="thumb">
+
+			<div class="modal">
+	<label for="modal-1">
+		<div class="btn js-btn red pull-left">TRAILER</div>
+	</label>
+
+	<div class="modal-window">
+		<div class="modal-inner">
+			<div class="modal-close"></div>
+			<iframe width="640" height="360" src="//www.youtube.com/embed/FNQowwwwYa0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+
+			<div class="pull-left three-twelve listings-summary">
+				<h3>Movie Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a class="read-more" href="#">Read More </a></p>
+			</div>
+
+			
+		</div>
+
+		<div class="booking-list seven-twelve pull-right">
+			<h3>Buy Tickets</h3>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times void"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="bottom-row">
+			<div class="rating">15</div>
+			<div class="time" > 145 min</div>
+			<div class="two">
+				<h6 class="no-margin-b"><strong>Director:</strong> Ron Howard</h6>
+				<h6 class="no-margin-b"><strong>Title:</strong> Ron Howard</h6>
+
+			</div>
+		</div>
+
+	</div>
+
+
+				
+			</section>
+		</li>
+
+		
+		<li class="tab-header-and-content">
+			<a  class="tab-link" href="">Specials</a>
+			<section class="show-listings">
+				
+
+	<div class="col-twelve content all-listing">
+		<div class="film-review">
+			<h6 class="category">Premier</h6>
+			<img class="pull-left one-twelve" src="http://placehold.it/120x170/3d4154/ffffff.png" alt="" class="thumb">
+
+			<div class="modal">
+	<label for="modal-1">
+		<div class="btn js-btn red pull-left">TRAILER</div>
+	</label>
+
+	<div class="modal-window">
+		<div class="modal-inner">
+			<div class="modal-close"></div>
+			<iframe width="640" height="360" src="//www.youtube.com/embed/FNQowwwwYa0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+
+			<div class="pull-left three-twelve listings-summary">
+				<h3>Movie Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptatem optio doloribus quaerat itaque animi similique repellendus quisquam corporis? Eaque, aliquam, ullam, atque, possimus culpa earum tempora repudiandae distinctio quos dolore nisi libero. <a class="read-more" href="#">Read More </a></p>
+			</div>
+
+			
+		</div>
+
+		<div class="booking-list seven-twelve pull-right">
+			<h3>Buy Tickets</h3>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times void"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+			<div class="day">
+				<h6>Tuesday 28 May 2013</h6>
+				<ul>
+					<li class="times"><a href="">12:00</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="bottom-row">
+			<div class="rating">15</div>
+			<div class="time" > 145 min</div>
+			<div class="two">
+				<h6 class="no-margin-b"><strong>Director:</strong> Ron Howard</h6>
+				<h6 class="no-margin-b"><strong>Title:</strong> Ron Howard</h6>
+
+			</div>
+		</div>
+
+	</div>
+
+
+				
+			</section>
+		</li>
+
+
+	</ul>
+
+</div>
+
+
+
+
+ 
+    </div>
+ 
+  </div>
+
+
+
+     <footer id="footer-primary" class="footer-primary">
+    
+    <div class="wrapper">
+	    <ul class="logos">
+	    	<li><a href="">Europa Cinemas</a></li>
+	    	<li><a href="">Element Pictures</a></li>
+	    	<li><a href="">Volta</a></li>
+	    </ul>
+
+	    <ul class="links">
+	    	<li><a href="#">Twitter</a></li>
+	    	<li><a href="#">Facebook</a></li>
+	    	<li><a href="#">Youtube</a></li>
+	    	<li><a href="#">Instagram</a></li><br/>
+	    	<li><a href="#">Privacy</a></li>
+	    	<li><a href="#">Terms &amp; Conditions</a></li><br/>
+	    	<li><a href="#">Copyright 2014 LightHouse</a></li>
+	    </ul>
+
+	</div>
+
+ </footer>
+
+
+    <!--[if lte IE 8]>
+      <!-- build:js({app,.tmp}) /assets/js/ie8.js -->
+<script src="/_bower_components/selectivizr/selectivizr.js"></script>
+<script src="/_bower_components/respond/src/respond.js"></script>
+<!-- endbuild -->
+
+    <![endif]-->
+
+    <!-- build:js({app,.tmp}) /assets/js/app.js -->
+<script src="/_bower_components/jquery/jquery.js"></script>
+<script src="/_bower_components/swipe/swipe.js"></script>
+<script src="/_bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="/_bower_components/jcarousel/dist/jquery.jcarousel.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
   e.src='//www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');</script></body></html>
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+  </body>
+</html>

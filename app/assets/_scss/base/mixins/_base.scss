@@ -32,3 +32,8 @@
   background-repeat: none;
 }
 
+@mixin sprite-simple($sprite-class, $x: 0, $y: 0) {
+  @extend .#{$sprite-class};
+  background-position: $x $y;
+  background-repeat: none;
+}

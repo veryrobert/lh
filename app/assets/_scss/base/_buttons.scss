@@ -1,3 +1,5 @@
+// button position background-position: 185px -882px;
+
 
 @mixin button-hover($base-color, $hover-color: darken($base-color, 50)) {
   background-color: $base-color;
@@ -24,8 +26,11 @@ button {
   @include transition(all 0.2s ease-in-out);
   @include border-radius(2px);
 
+  @include sprite-simple(sprite-2, 185px, -882px);
+
   &.red {
     @include button-hover(#CA3743, #CA3743);
+    background-position: 215px -882px;
   }
   &.green {
     @include button-hover(#4ac9a6, #4ac9a6);
@@ -35,6 +40,7 @@ button {
   }
   &.grey {
     @include button-hover(#ccc, #ccc);
+    background-position: 215px -882px;
   }
 
   &.full-width-button {
@@ -55,7 +61,7 @@ button {
 
 .season-tickets  {
   .buttons {
-  min-height: 112px;
+  min-height: 118px;
   }
 }
 

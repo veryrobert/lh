@@ -65,6 +65,16 @@ $(window).on("resize load", function() {
 });
 
 
+$('.btn').click(function(){
+  console.log('you clicked this');
+  $('.modal-window').fadeIn();
+});
+
+$('.modal-close').click(function(){
+  console.log('you clicked this');
+  $('.modal-window').fadeOut();
+});
+
   $('.dropdown').hover(
 
     function() {
