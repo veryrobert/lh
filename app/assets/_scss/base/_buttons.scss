@@ -102,8 +102,8 @@ button.full-width-button {
 
 @include media($below-860) {
 
-button.full-width-button {
-   background-position-x: 12px;
-}
+  button.full-width-button {
+     background-position-x: 12px;
+  }
 
 }

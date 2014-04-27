@@ -368,7 +368,26 @@ form ul li {
   position: relative;
 }
 
+.form select {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-indent: 8px;
+}
 
 #payment form select {
   background-position: -45px -2689px;
 }
+
+ .form {
+    li.small.checkbox {
+      // margin-left: 0px;
+      width: 80%;
+      }
+
+      button.red {
+        background-position: -87px -882px;
+      }
+
+
+  }
+

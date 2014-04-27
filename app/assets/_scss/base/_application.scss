@@ -309,10 +309,13 @@ footer {
     li {
       margin: 10px;
       &:first-child a {
+        position: relative;
+        top: -6px;
+
         @include sprite(sprite-1, 65%, -129px, 47px, 138px);
       }
       &:nth-child(2) a {
-        @include sprite(sprite-1, 64%, -180px, 34px, 138px);
+        @include sprite(sprite-1, 64%, 89px, 34px, 138px);
       }
       &:last-child a {
         @include sprite(sprite-1, 78%, -226px, 34px, 138px);
@@ -1021,7 +1024,7 @@ p {
 }
 
 .purple {
-  background: #3d4154;
+  background-color: #3d4154;
   color: white; 
 }
 
@@ -1056,7 +1059,7 @@ h2.costs {
 
   header span.arrow-down.mobile {
     @include sprite(sprite-1, 97%, 56.2%, 42px, 42px);
-    background-color: #CA3743;
+    background-color:  darken($dark-purple, 2%);
     padding: 3px;
     height: 40px;
     width: 41px;

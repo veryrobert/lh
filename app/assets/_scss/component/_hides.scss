@@ -18,6 +18,11 @@ body {
     .hide-730 {
       display: none;
     }
+
+    .show-mobile {
+      display: none;
+    }
+
   }
 
   @include media($mobile) {
@@ -30,32 +35,128 @@ body {
   }
 }
 
+@include media($below-860) {
+  ul.primaryMenu {
+    display: none;
+  }
+}
 
- @include media($below-980) {
-   ul.primaryMenu {
-    // line-height: 16px;
-    background: aqua;
+
+// Tablet Styling Home page
+////////////////////////////////////////////////////////////////////////////
+
+@include media($below-860) {
+  ul.primaryMenu {
     li a {
       margin: 0px;
     }
-   }
-
-   header .wrapper {
-    // padding: 0px;
-   }
-
-  header .social {
-    width: 18%;
-    }
-
   }
-
-@include media($below-860) {
-  
-  ul.primaryMenu {
-    background: yellow;
+  aside.col-four {
+    @include span-columns(8 of 8);
+  }
+  aside.social ul.social li {
+    padding: 16px 70px;
+  }
+  aside.social {
+    width: 100%;
+  }
+  .primary-content.col-eight, section.col-eight {
+    @include span-columns(8 of 8);
+  }
+  .swipe span.container {
+    width: 60%;
+  }
+  .season-tickets {
+    right: 66px;
+    h6 {
+      font-size: 10px;
+    }
+  }
+  header .social {
+    width: 20%;
+  }
+  .primaryMenu {
     display: none;
   }
+
+  .form {
+      div.six-eight, li.small.checkbox {
+      margin-left: 0px;
+      width: 100%;
+      }
+  }
+
+
+  #payment ul.info {
+      position: absolute;
+      bottom: -16px;
+  }
+
+
+  #payment form > div, #card-details form > div {
+    width: 100%;
+    select, label {
+      float: left;
+      clear: left;
+    }
+    select {
+      padding: 0px 5px;
+    }
+  }
+
+  div.process {
+    display: block;
+    padding: 0px;
+    position: relative;
+    left: 22px;
+    top: 30px;
+    height: 52px;
+    width: 52px;
+    text-indent: 9999px;
+    overflow: hidden;
+    margin-right: 2%;
+
+    &.active {
+      display: block;
+   
+
+    h6 {
+      height: 52px;
+      width: 52px;
+      top: 0px;
+    }
+
+    &.process h6{
+      background-position: 216% -1801px;
+    }
+
+  }  
+
+}
+
+div.process h6 {
+  top: 0px;
+}
+
+div.process.payment h6 {
+  background-position: 196% -1859px;
+}
+
+div.process.success h6 {
+  background-position: 196% -1916px;
+}
+
+  .logo.pull-right {
+    // float: left;
+    margin-right: 0px;
+    padding: 22px 22px;
+  }
+
+ .five-eight {
+    width: 100%;
+  }
+
+
 
 }
 
@@ -64,18 +165,19 @@ body {
 // Mobile Styling Home page
 ////////////////////////////////////////////////////////////////////////////
 
-@include media($mobile) {
-  #firstNav {
-    ul.menu {
-      display: none;
-    }
-  }
+//  Mainly navigation here for mobile and ipad
+
+@include media($below-980) {
+
   .menu-toggle {
     display: block;
   }
   header {
     height: auto;
   }
+
+
+
   .nav-logo {
     .wrapper {
       padding: 0px;
@@ -149,17 +251,108 @@ body {
   ul.primaryMenu > li:after, ul.menu > li:after {
     content: '';
   }
-  .yellow .wrapper {
-    padding: 0px;
-    margin: 0px;
+
+   ul.subMenu > li {
+    margin-left: 0px;
+    margin-right: 0px;
+    a {
+      margin-left: 22px;
+    }
   }
-  div.logo {
+  ul.primaryMenu li > ul.subMenu li a:hover {
+    margin-left: 22px;
+  }
+
+  ul.primaryMenu > li a  {
+    padding: 0px 22px;
+    width: 87%;
+    display: inline-block;
+  } 
+
+  ul.subMenu > li a {
+    padding:0px;
+
+    width: 87%;
+    display: inline-block;
+  }
+
+  .all-listing .booking-list {
+    width: 100%;
+    padding-left: 0px;
+    border-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  div.pull-left.three-twelve.listings-summary {
+
+    width: 75%;
+    height: 260px;
+    float: right;
+    padding-right: 30px;
+
+  }
+  .all-listing .booking-list div.day, .all-listing .booking-list h3{
+    border-left: 0px;
+  }
+
+  .all-listing {
+padding-bottom: 0px;
+}
+
+  img.one-twelve {
+    width: 18%;
+  }
+
+  .bottom-row {
+    position: relative;
+    width: 100%;
+    border-top: 0px;
+    border-bottom: 0px;
+    bottom: 0px;
+  }
+
+
+}
+
+
+// More Mobile stuff going on
+
+@include media($mobile) {
+
+
+  .logo.pull-right {
+    // float: left;
+    margin-right: 0px;
+    padding: 22px 0px;
+  }
+
+    div.process {
+      display: none;
+    }
+
+
+    #firstNav {
+    ul.menu {
+      display: none;
+    }
+  }
+
+   header .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  ul.social.pull-right.three-twelve {
+    width: 50%;
+  }
+
+  header div.logo {
     // margin-top: -12px;
     padding: 22px 22px;
     border: 0px;
   }
   div.logo a {
-    @include transform(scale(0.8, 0.8));
+    @include transform(scale(0.78, 0.78));
     margin-left: -30px;
     margin-top: 0px;
   }
@@ -263,39 +456,22 @@ body {
       background-position: 64% -229px;
     }
   }
-
   footer .logos {
     margin-bottom: 22px;
     margin-left: -10px;
   }
-
-
-
   body aside.social a.social {
     // width: 100% !important;
+ 
+  }
+ 
+  aside.social ul.social li {
+    padding: 16px 27px;
   }
 
-  ul.subMenu > li {
-    margin-left: 0px;
-    margin-right: 0px;
-
-
-    a {
-      margin-left: 22px;
-
-    }
-
-  }
-
-  ul.primaryMenu li > ul.subMenu li a:hover, ul.primaryMenu li a {
-     margin-left: 22px;
-  }
 
 
 }
-
-
-
 
 
 // Mobile Styling  Film Page
@@ -401,20 +577,107 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
+  #guts {
+    min-height: 480px;
+  }
+  button.notify {
+    background-position-x: 15px;
+  }
+  .six-eight.pull-right, .six-eight.pull-right {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+
+
+  input.two-eight, input.three-eight {
+     @include span-columns(6 of 6);
+     padding-left: 0px;
+     margin-left: 0px;    
+  }
+
+  select.four-eight {
+    margin-left: 0px;  
+  }
+
+  input.question {
+    @include span-columns(5 of 6);
+  }
+
+
+
+.form {
+  div.six-eight, li.small.checkbox {
+    margin-left: 0px;
+    width: 100%;
+
+   select {
+    padding-left: 0px;
+   } 
+
+  button {
+    margin-bottom: 12px;
+    width: 100%;
+    margin-left: 0px;
+  }
 
   
-  #guts {
-min-height: 480px;
+  select.two-eight {
+    
+    padding: 0 10px !important;
+
+  }
+
+  }
 }
 
 
+  div.note.seven-eight {
+    width: 100%;
+    padding-top: 20px;
+  }
 
+  .form select {
+    padding: 0px;
+    margin-left: 0px;
+    min-width: 28%;
 
-button.notify {
-  background-position-x: 15px;
+    &.four-eight {
+      background-position-x: 135px;
+    }
+
+  }
+
+button.large.red.pull-right {
+  float: left;
+  width: 100%;
+  background-position: 12px -882px;
 }
 
+button.enquirey {
+  background-image: none;
+}
 
+div.pull-left.three-twelve.listings-summary {
+  width: 100%;
+  padding-right: 0px;
 
+}
+
+.listings-summary {
+  top: 60px;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.btn a {
+  color: #fff;
+}
 
 }

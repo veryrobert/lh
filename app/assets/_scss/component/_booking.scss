@@ -33,6 +33,13 @@ aside.booking {
     color: #fff;
     margin-top: 5px;
     @include sprite(sprite-2, 50%, -880px, 42px, 100%);
+
+    background-repeat: no-repeat;
+
+    @include media($mobile) {
+      background-position-x: 12px;
+    }
+
     text-indent: 0px;
   }
 }
@@ -52,6 +59,8 @@ aside.booking {
       font-weight: lighter;
       // fall back for nth-child below
       @include sprite(sprite-2, 1px, -1280px, 42px, 100%);
+        background-repeat: no-repeat;
+
       text-indent: 20px;
       
       @include border-radius(2px);
@@ -103,16 +112,19 @@ aside.booking {
 
 aside .dropdown:first-of-type dt a {
 	 @include sprite(sprite-2, 3px, -1078px, 42px, 100%);
+    background-repeat: no-repeat;
 	 text-indent: 20px;
 }
 
 aside .dropdown:last-of-type dt a {
 	 @include sprite(sprite-2, 1px, -1481px, 42px, 100%);
+     background-repeat: no-repeat;
 	 text-indent: 20px;
 }
 
 aside:nth-child(2) dt a {
 	@include sprite(sprite-2, 1px, -1280px, 42px, 100%);
+    background-repeat: no-repeat;
 	 text-indent: 20px;
 }
 

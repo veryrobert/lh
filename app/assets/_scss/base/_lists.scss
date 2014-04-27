@@ -49,6 +49,10 @@ ul.social {
     float: left;
     border-right: solid 1px #ececec;
 
+    &:last-child {
+      border-right: solid 0px #ececec;
+    }
+
      @include media($below-980) {
         
         padding: 16px 13px;

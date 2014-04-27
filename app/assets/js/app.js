@@ -47,13 +47,7 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////////////////
 
 
-$('.btn').click(function(){
-  $('.modal-window').fadeIn();
-});
 
-$('.modal-close').click(function(){
-  $('.modal-window').fadeOut();
-});
 
   $('.dropdown').hover(
     function() {
@@ -223,30 +217,61 @@ $('div.content').each(function(){
 });
 
 
+
 $(window).on("load resize", function() {
+  if($(window).width() >= 890) {
 
-  if(checkDevice() === true || $(window).width() < 860) {
-      $('.primaryMenu').css('display','none');
-      $('a.is-active').removeClass('is-active').next().removeClass('is-open').hide();
-      $('.arrow-down').addClass('mobile');
-      $(".js-vertical-tab-content").show();
-      $("a.vertical-tab-accordion-heading").hide();
+
   }
-
 });
 
 $(window).on("load resize", function() {
-  if($(window).width() > 860) {
-      $('.primaryMenu').css('display','inline-block');
+
+  if(checkDevice() === true || $(window).width() <= 890) {
+      $('.primaryMenu').hide();
+      
+      $('.arrow-down').addClass('mobile');
+      $(".js-vertical-tab-content").show();
+      $(".menu-toggle").show();
+      $("a.vertical-tab-accordion-heading").hide();
+  } else {
+
+      $('.primaryMenu').show().css('display','inline-block');
       $('.arrow-down').removeClass('mobile');
        $('.accordion-tabs-minimal').each(function(index) {
         $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
         });
 
+        $(".menu-toggle").hide();
+
       tabPath();
 
+    $('.btn').click(function(){
+      $('.modal-window').fadeIn();
+    });
+
+    $('.modal-close').click(function(){
+      $('.modal-window').fadeOut();
+    });
+
   }
+
 });
+
+$(window).on("load resize", function() {
+
+  if(checkDevice() === true || $(window).width() <= 768) {
+
+         $('.accordion-tabs-minimal').each(function() {
+        $('a.is-active').removeClass('is-active').next().removeClass('is-open').hide();
+      });
+
+  }
+
+});
+
+
+
 
 $('.menu-toggle').click(function() {
       $('ul.primaryMenu').slideToggle(function() {
