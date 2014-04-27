@@ -17,6 +17,8 @@ $mobile: new-breakpoint(max-width 720px 6);
 $small-desktop: new-breakpoint(max-width 1080px 12);
 $below-980: new-breakpoint(max-width 980px 12);
 
+$below-860: new-breakpoint(max-width $large-screen 8);
+
 $below-730: new-breakpoint(max-width 730px 8);
 
 

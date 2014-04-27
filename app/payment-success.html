@@ -1,0 +1,29 @@
+---
+layout: payment
+title: Single Film Page
+---
+
+<div class="wrapper payment-page-title margin-t-20">
+	<h1>Your Ticket Basket</h1>
+</div>
+
+<div id="payment" class="wrapper primary-content">
+	<section class="col-eight synopsis">
+		{% include single-film-checkout-single.html %}
+		{% include single-film-checkout-full.html %}
+
+		<div class="purple content no-margin-t">
+			<h2 class="five-eight valign-middle large">Parking</h2>
+			<button class="large red pull-right margin-t-5 more">Find out More</button>
+		</div>
+
+	</section>
+
+
+		{% include aside-booking.html %}
+		{% include aside-link.html %}
+
+
+</div>
+
+

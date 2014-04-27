@@ -16,7 +16,8 @@
 }
 
 button {
-  font: 12px normal "sansfont", $helvetica;
+  font: 12px bold "sansfont", $helvetica;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding: 12px 15px;
@@ -41,6 +42,11 @@ button {
   &.grey {
     @include button-hover(#ccc, #ccc);
     background-position: 215px -882px;
+  }
+  &.white {
+    @include button-hover(#fff, #fff);
+    background-position: 186px -2272px;
+    color: #4d4d4d;
   }
 
   &.full-width-button {
@@ -74,4 +80,30 @@ button {
 .buttons button.notify {
   position: relative;
   top: 73px;
+}
+
+button.readmore {
+  background-image: none;
+}
+
+button.full-width-button {
+  background-position: 304px -882px;
+}
+
+
+@include media($mobile) {
+    
+   button.large.red.two-eight.pull-right {
+    width: 100%;
+   }
+
+ }
+
+
+@include media($below-860) {
+
+button.full-width-button {
+   background-position-x: 12px;
+}
+
 }

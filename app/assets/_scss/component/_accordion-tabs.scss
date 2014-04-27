@@ -181,15 +181,15 @@ span.date {
 // Now Showing Tabs
 ////////////////////////////////////////////////////
 
-#now-showing, #coming-soon {
+#now-showing, #coming-soon, #events {
   .tab-link {
     width: auto;
     padding: 18px 25px 22px 25px;
   } 
   .arrow-down.is-active {
-    top: 40px;
+    bottom: -34px;
     left: 50%;
-    margin-left: -12px;
+    margin-left: -14px;
   }
 }
 
@@ -217,3 +217,17 @@ span.date {
 }
 
 
+
+
+@-moz-document url-prefix() {
+    .accordion-tabs-minimal li.tab-header-and-content a.tab-link {
+
+        width: 11.95%;
+
+    }
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}

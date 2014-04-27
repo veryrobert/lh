@@ -1,51 +1,38 @@
 ---
-layout: default
+layout: payment
 title: Single Film Page
 ---
 
-<div id="payment" class="wrapper primary-content">
-			<section class="col-eight synopsis">
-
-				{% include single-film-payment.html %}
-				{% include single-film-payment.html %}
-
-				
-				<div class="content form">
-
-				<form action="">
-				<ul>
-
-
-						<li class="small six-eight pull-right checkbox">
-								
-									<input class="small" type="checkbox" name="vehicle" value="Bike"><span>I agree to the <strong>Terms &amp; Conditions</strong></span>
-								
-							</li>
-
-							<li>
-								<div class="six-eight">
-									<button class="large red register">Register</button>
-									<button class="large grey cancel">Cancel</button>
-								</div>
-							</li>
-						</ul>
-
-
-
-						</form>
-
-							<div class="note seven-eight">
-								<h6>Please Note</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, reiciendis amet porro officia cumque explicabo rerum aliquam perspiciatis consectetur nulla voluptates sequi praesentium nemo accusantium delectus! Expedita, dicta vitae inventore voluptatum rem repudiandae corrupti odit hic obcaecati eum ducimus tempora fugiat voluptates nesciunt est ipsum laboriosam pariatur sit doloribus
-									quas!</p>
-							</div>
-						</div>
-					
-
-			</section>
-	
-{% include aside-booking.html %}
-
+<div class="wrapper payment-page-title margin-t-20">
+	<h1>Your Ticket Basket</h1>
 </div>
+
+<div id="payment" class="wrapper primary-content">
+	<section class="col-eight synopsis">
+		{% include single-film-payment.html %}
+		{% include single-film-payment.html %}
+	<div class="content form">
+		<form action="">
+			<ul>
+				<li class="small six-eight pull-right checkbox">
+					<input class="small" type="checkbox" name="vehicle" value="Bike"><span>I agree to the <strong>Terms &amp; Conditions</strong></span>
+				</li>
+				<li>
+					<div class="six-eight">
+						<button class="large red register enquirey">Register</button>
+						<button class="large grey cancel">Cancel</button>
+					</div>
+				</li>
+			</ul>
+		</form>
+		<div class="note seven-eight">
+			<h6>Please Note</h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, reiciendis amet porro officia cumque explicabo rerum aliquam perspiciatis consectetur nulla voluptates sequi praesentium nemo accusantium delectus! Expedita, dicta vitae inventore voluptatum rem repudiandae corrupti odit hic obcaecati eum ducimus tempora fugiat voluptates nesciunt est ipsum laboriosam pariatur sit doloribus
+				quas!</p>
+			</div>
+		</div>
+		</section>
+		{% include aside-booking.html %}
+	</div>
 
 

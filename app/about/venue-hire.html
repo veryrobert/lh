@@ -3,8 +3,8 @@ layout: default
 title: lh
 ---
 <div id="title" class="wrapper">
-	<div id="name" class="page-banner col-twelve" style="background-image: url(http://www.placekitten.com/1020/310); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
-		<h1>Our Programme</h1>
+	<div id="name" class="page-banner col-twelve" style="background-image: url(http://placehold.it/1020x80/CA3743/ffffff.png); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
+		<h1>Venue Hire</h1>
 	</div>
 </div>
 <div id="about" class="wrapper primary-content">
@@ -42,9 +42,10 @@ title: lh
 						</ul>
 					</section>
 
-					<form name="input" action="demo_form_action.asp" method="get" class='form'>
 
-					<div class="content">
+<form id="myForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" class="form" novalidate>
+
+<div class="content">
 						<h4 class="form-title">
 							Company Name
 						</h4>
@@ -58,9 +59,9 @@ title: lh
 								<input class="four-eight" type="text">
 							</li>
 							<li>
-								<label class="two-eight"  for="text_field">Point of Contact</label>
+								<label class="two-eight required"  for="text_field">Point of Contact</label>
 								<!-- <span class="required">*</span> -->
-								<input class="four-eight" type="text">
+								<input class="four-eight required" name="fname" type="text" required>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Phone Number</label>
@@ -85,40 +86,40 @@ title: lh
 							<li>
 								<label class="two-eight"  for="text_field">Company Address</label>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Start Time</label>
 								<select  class="two-eight">
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Screen Request</label>
 								<select  class="two-eight" >
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
@@ -164,13 +165,24 @@ title: lh
 							<button type="submit" class="large red enquirey three-left-margin no-margin-b">Summit Enquirey</button>
 
 						</div>
-						
+
+</form>
+
+				
 						</form>
 
 					</div>
 				</div>
+						{% include aside-booking-dropdown-left.html %}
+						{% include aside-link-left.html %}
 			</div>
+
+
+
 		</section>
 	</div>
 
 
+
+
+		

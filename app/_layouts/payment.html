@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    {% include styles.html %}
+    
+    <!-- build:js({app,.tmp}) /assets/js/modernizr.js -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+    <header id="payment-page">
+       <div class="full-width yellow"> 
+            <div class="wrapper">
+
+                <nav id="firstNav">
+
+                  <div><a href="/index.html" class="red square btn"><span></span><p>Return to Main Website</p></a></div>                   
+               
+                </nav>
+             </div>
+         </div>
+
+
+        <div class="full-width nav-logo"> 
+           <div class="wrapper">
+                <nav id="secondNav">
+
+
+        
+
+              <div class="logo pull-right"><a href="/">LightHouse Cinema</a></div>
+
+
+            </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+  <div id="container">
+    
+    <div id="guts">
+      
+        {{ content }}
+ 
+    </div>
+ 
+  </div>
+
+
+
+    {% include footer.html %}
+
+    <!--[if lte IE 8]>
+      {% include scripts-ie8.html %}
+    <![endif]-->
+
+    {% include scripts.html %}
+    {% include google-analytics.html %}
+  </body>
+</html>

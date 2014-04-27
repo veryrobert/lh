@@ -382,10 +382,10 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'imagemin',
-    'svgmin',
+    // 'svgmin',
     'rev',
     'usemin',
-    'htmlmin'
+    // 'htmlmin'
   ]);
 
   grunt.registerTask('deploy', [

@@ -23,6 +23,7 @@ h1, h2{
 h3, h4, h5, h6 {
   font-weight: normal;
   font-family: sansfont;
+  line-height: 1.5em;
   }
 
 
@@ -70,6 +71,7 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
+  line-height: 1.5em;
 }
 
 .cart h6 {
@@ -79,7 +81,7 @@ h6 {
 p {
   font-size: $base-font-size * 0.875; // 16 * 0.875 = 14px
   margin: 0 0 ($base-line-height * .4);
-  line-height: 1.5em;
+  line-height: 1.4em;
 
   &.large {
     font-size: $base-font-size * 1.125; 
@@ -161,6 +163,7 @@ h6.category {
   right: 0px;
   top: 0px;
   text-align: center;
+  z-index: 7777;
 }
 
 p.small,  {

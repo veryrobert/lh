@@ -14,9 +14,9 @@ fieldset {
   padding: $base-line-height;
 }
 
-input,
+// input,
 label,
-select {
+select, input:not([type='checkbox']) {
   // display: block;
   font-family: $form-font-family;
   font-size: $form-font-size;
@@ -34,6 +34,11 @@ label {
 
   &.required:after {
     content: "*";
+    color:#CA3743;
+    font-size: 24px;
+    font-weight:bold;
+    position: relative;
+    left: 8px;
   }
 
   abbr {
@@ -195,6 +200,20 @@ margin-bottom: 8px;
   @include border-radius(2px);
   padding: 5px 5px 5px 10px;
   margin-right: 0px;
+  min-width: 13.7%;
+
+  @include sprite-simple(sprite-2, -79px, -2689px);
+  background-repeat: no-repeat;
+  
+  &.two-eight {
+     background-position: -23px -2689px;
+     padding-right: 0px;
+     margin-right: 0px;
+  }
+
+ &.four-eight {
+    background-position: 152px -2689px;
+}
 
   &:first-child { margin-left: 10px; }
 
@@ -231,3 +250,125 @@ li.small.checkbox {
   width: 40%;
 }
 
+
+
+input:valid {
+  // background: hsla(100, 90%, 70%, 1);
+}
+
+input:required {
+  background: #fff;
+
+  &.warning {
+    background: rgba(187,35,53,0.2);
+    border: 2px solid #CA3743;
+  }
+
+}
+
+
+
+button.enquirey {
+  width: 210px;
+}
+
+.warning {
+  @include shift(2 of 8);
+  padding-left: 20px;
+  color: #CA3743;
+}
+
+div.question {
+  @include transition(all 0.2s ease-in-out);
+  background: #ccc;
+  color: white;
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  font-weight: bold;
+    @include border-radius(32px);
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    &:hover {
+      background: #CA3743;
+    }
+}
+
+.form input.question {
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+
+form button:nth-child(2) {
+  margin-top: 0px;
+}
+
+// input[type=checkbox] + label {
+//   color: #ccc;
+//   font-style: italic;
+// } 
+// input[type=checkbox]:checked + label {
+//   color: #f00;
+//   font-style: normal;
+// }
+
+input[type=checkbox] {
+
+   -webkit-appearance: value;
+   -moz-appearance:    value;
+   appearance:         value;
+
+}
+
+.question {
+  cursor: pointer;
+}
+
+div.tool-tip.purple {
+
+visibility: hidden;
+font-size: 16px;
+font-weight: normal;
+opacity: 0;
+width: 206px;
+position: absolute;
+text-align: center;
+background: #3d4154;
+color: white;
+padding: 14px 22px 12px 22px;
+top: -100px;
+left: -89px;
+@include border-radius(2px);
+@include transition(all 0.2s ease-in-out);
+
+
+> span.arrow-down {
+  
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: -18px;
+   @include triangle(24px 18px, #3d4154, down);
+
+}
+
+&.active {
+ visibility: visible;
+ opacity: 1;
+}
+
+}
+
+form ul li {
+  position: relative;
+}
+
+
+#payment form select {
+  background-position: -45px -2689px;
+}

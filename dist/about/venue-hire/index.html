@@ -9,16 +9,10 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css({app,.tmp}) /assets/css/main.css -->
-<link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
-<link rel="stylesheet" href="/assets/css/syntax.css">
-<link rel="stylesheet" href="/assets/css/screen.css">
-<!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/9342.main.css">
 
     
-    <!-- build:js({app,.tmp}) /assets/js/modernizr.js -->
-    <script src="/_bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <script src="assets/js/a52a.modernizr.js"></script>
   </head>
 
   <body>
@@ -29,9 +23,6 @@
 
 
     
-<!-- <div class="darken-left"></div>
-<div class="darken-right"></div> -->
-
     <header>
        <div class="full-width yellow"> 
             <div class="wrapper">
@@ -47,7 +38,7 @@
                         <ul class="menu four-twelve">
                             <li><a class="ajaxCall" href="/about/venue-hire/">Venue Hire</a></li>
                             <li><a class="ajaxCall" href="">Contact us</a></li>
-                            <li><a class="ajaxCall" href="">MemberShip</a></li>
+                            <li><a class="ajaxCall" href="">Membership</a></li>
                         </ul>
 
                         <div class="cart pull-right">
@@ -70,11 +61,11 @@
         <div class="full-width nav-logo"> 
            <div class="wrapper">
                 <nav id="secondNav">
-                <h1 class="logo"><a href="/">LightHouse Cinema</a></h1>
+                <div class="logo"><a href="/">LightHouse Cinema</a></div>
 
-                <button class="menu-toggle">Click Me</button>
+                <div class="menu-toggle">Click Me</div>
 
-                <ul class="primaryMenu">
+                <ul class="primaryMenu hide-980">
                     <li><a class="ajaxCall" href="/now-showing/">Now Showing</a></li>
                     <li><a class="ajaxCall" href="/coming-soon/">Coming Soon</a></li>
                     <li><a class="ajaxCall" href="/events/">Events</a></li>
@@ -89,7 +80,7 @@
                             <li><a class="ajaxCall" href="#">Sub Menu</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#">About Us</a>
+                    <li class="dropdown"><a href="/about/">About Us</a>
                     <span class="arrow-down"></span>    
                         <ul class="subMenu subMenu-2">
                             <div class="arrow-up"></div>
@@ -117,14 +108,7 @@
         </div>
 
     </header>
-<!-- 
 
-<div class="tooltip-item">
-  Hover for Tooltip
-  <div class="tooltip">
-    <p>Tooltip text</p>
-  </div>
-</div> -->
 
 
 
@@ -134,21 +118,21 @@
     <div id="guts">
       
         <div id="title" class="wrapper">
-	<div id="name" class="page-banner col-twelve" style="background-image: url(http://www.placekitten.com/1020/310); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
-		<h1>Our Programme</h1>
+	<div id="name" class="page-banner col-twelve" style="background-image: url(http://placehold.it/1020x80/CA3743/ffffff.png); background-size: cover; float: left; list-style: none; background-position: 50% 50%;">
+		<h1>Venue Hire</h1>
 	</div>
 </div>
 <div id="about" class="wrapper primary-content">
 	<section class="col-twelve">
 		<div class="vertical-tabs-container">
 			<div class="vertical-tabs col-four">
-	<a href="/about/our-story/" class="js-vertical-tab vertical-tab is-active" rel="tab2">Our Story<span class="arrow-right is-active"></a>
-	<a href="/about/our-programme/" class="js-vertical-tab vertical-tab" rel="tab3">Our Programme</a>
-	<a href="/about/press/" class="js-vertical-tab vertical-tab" rel="tab5">Press</a>
-	<a href="/about/venue-hire/" class="js-vertical-tab vertical-tab" rel="tab6">Venue Hire</a>
-	<a href="/about/carrers/" class="js-vertical-tab vertical-tab" rel="tab7">Carrers</a>
-	<a href="/about/partners/" class="js-vertical-tab vertical-tab" rel="tab8">Partners</a>
-	<a href="/about/contact/" class="js-vertical-tab vertical-tab" rel="tab9">Contact</a>
+	<a href="/about/our-story/" class="js-vertical-tab vertical-tab" rel="tab1">Our Story</a>
+	<a href="/about/our-programme/" class="js-vertical-tab vertical-tab" rel="tab2">Our Programme</a>
+	<a href="/about/press/" class="js-vertical-tab vertical-tab" rel="tab3">Press</a>
+	<a href="/about/venue-hire/" class="js-vertical-tab vertical-tab" rel="tab4">Venue Hire</a>
+	<a href="/about/carrers/" class="js-vertical-tab vertical-tab" rel="tab5">Carrers</a>
+	<a href="/about/partners/" class="js-vertical-tab vertical-tab" rel="tab6">Partners</a>
+	<a href="/about/contact/" class="js-vertical-tab vertical-tab" rel="tab7">Contact</a>
 </div>
 
 
@@ -183,9 +167,10 @@
 						</ul>
 					</section>
 
-					<form name="input" action="demo_form_action.asp" method="get" class='form'>
 
-					<div class="content">
+<form id="myForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" class="form" novalidate>
+
+<div class="content">
 						<h4 class="form-title">
 							Company Name
 						</h4>
@@ -199,9 +184,9 @@
 								<input class="four-eight" type="text">
 							</li>
 							<li>
-								<label class="two-eight"  for="text_field">Point of Contact</label>
+								<label class="two-eight required"  for="text_field">Point of Contact</label>
 								<!-- <span class="required">*</span> -->
-								<input class="four-eight" type="text">
+								<input class="four-eight required" name="fname" type="text" required>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Phone Number</label>
@@ -226,40 +211,40 @@
 							<li>
 								<label class="two-eight"  for="text_field">Company Address</label>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 								<select>
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Start Time</label>
 								<select  class="two-eight">
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
 								<label class="two-eight"  for="text_field">Screen Request</label>
 								<select  class="two-eight" >
-									<option value="volvo">Volvo</option>
-									<option value="saab">Saab</option>
-									<option value="mercedes">Mercedes</option>
-									<option value="audi">Audi</option>
+									<option value="volvo">Default</option>
+									<option value="saab">Option 1</option>
+									<option value="mercedes">Option 2</option>
+									<option value="audi">Option 3</option>
 								</select>
 							</li>
 							<li>
@@ -305,17 +290,76 @@
 							<button type="submit" class="large red enquirey three-left-margin no-margin-b">Summit Enquirey</button>
 
 						</div>
-						
+
+</form>
+
+				
 						</form>
 
 					</div>
 				</div>
+						
+
+<aside class="col-four booking newsletter pull-left">
+	<h2 class="large-stencil">Book Now</h2>
+	<dl class="dropdown">
+		<dt>
+			<a>
+				<span>Choose a Showing</span>
+				<span class="down-arrow"></span>
+			</a>
+		</dt>
+		<dd>
+			<ul>
+				<li><a class="default">Batman</a></li>
+				<li><a>Superman</a></li>
+				<li><a>Kittens</a></li>
+				<li><a>Fantasic Mr Fox</a></li>
+			</ul>
+		</dd>
+	</dl>
+
+	<dl class="dropdown">
+		<dt><a><span>Choose a Date</span>
+			<span class="down-arrow"></span></a></dt>
+			<dd>
+				<ul>
+					<li><a class="default">Sunday 01st May</a></li>
+					<li><a>Monday 2nd May</a></li>
+					<li><a>Tuesday 3rd May</a></li>
+					<li><a>Wednesday 4th May</a></li>
+					<li><a>Thursday 5th May</a></li>
+					<li><a>Friday 6th May</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl class="dropdown">
+			<dt><a><span>Choose a Time</span>
+				<span class="down-arrow"></span></a></dt>
+				<dd>
+					<ul>
+						<li><a class="default">21:00</a></li>
+						<li><a>12:00</a></li>
+						<li><a>13:00</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<button class="tickets">Find Tickets</button>
+		</aside>
+						<aside style="background-image: url(http://placehold.it/320x180/CA3743/ffffff.png); background-size: cover; background-position: 50% 50%;" class="col-four pagelink pull-left">	
+	<h3><a class="green" href="#">Virtual Tour</a></h3>
+</aside>
 			</div>
+
+
+
 		</section>
 	</div>
 
 
 
+
+		
  
     </div>
  
@@ -348,20 +392,11 @@
 
 
     <!--[if lte IE 8]>
-      <!-- build:js({app,.tmp}) /assets/js/ie8.js -->
-<script src="/_bower_components/selectivizr/selectivizr.js"></script>
-<script src="/_bower_components/respond/src/respond.js"></script>
-<!-- endbuild -->
+      <script src="assets/js/5dfd.ie8.js"></script>
 
     <![endif]-->
 
-    <!-- build:js({app,.tmp}) /assets/js/app.js -->
-<script src="/_bower_components/jquery/jquery.js"></script>
-<script src="/_bower_components/swipe/swipe.js"></script>
-<script src="/_bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="/_bower_components/jcarousel/dist/jquery.jcarousel.min.js"></script>
-<script src="/assets/js/app.js"></script>
-<!-- endbuild -->
+    <script src="assets/js/478d.app.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

@@ -70,11 +70,11 @@ aside.pull-right {
 .arrow-down.is-active {
   position: absolute;
   left: 35%;
-  top: 23px;
+  bottom: -15px;
 
 // margin-left: 35%;
 
-  @include triangle(22px 12px, $dark-purple, down);
+  @include triangle(24px 18px, $dark-purple, down);
 }
 
 .arrow-right.is-active {

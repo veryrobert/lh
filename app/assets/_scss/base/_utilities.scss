@@ -82,6 +82,18 @@
   margin-top: 10px !important;
 }
 
+.margin-t-5 {
+  margin-top: 7px !important;
+}
+
 .inline-block {
   @include inline-block;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.more {
+  width: 208px;
 }
