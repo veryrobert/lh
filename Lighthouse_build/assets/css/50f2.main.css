@@ -2312,6 +2312,10 @@ section.show-listings.is-open {
   width: 48%;
   float: left; }
 
+ .cart {
+  width: 80px;
+ } 
+
 aside#cart {
   margin-top: 10px; }
   aside#cart div > ul {
