@@ -1844,10 +1844,16 @@ ul.primaryMenu {
 ul.primaryMenu > li a, ul.menu > li a {
   font-size: 0.8em; }
 ul.primaryMenu > li:after, ul.menu > li:after {
-  content: url("../img/300c.slash.svg");
-  vertical-align: -3px; }
+  content: " / ";
+  font-weight: bold;
+  opacity: 0.5;
+  vertical-align: -2px;
+  margin-right: 1px; }
 ul.primaryMenu > li:last-of-type:after, ul.menu > li:last-of-type:after {
-  content: ""; }
+  content: "";
+  font-weight: bold; }
+ul.primaryMenu > li:last-of-type a, ul.menu > li:last-of-type a {
+  margin-right: 0px; }
 
 ul.menu, ul.social, ul.primaryMenu {
   display: inline-block; }

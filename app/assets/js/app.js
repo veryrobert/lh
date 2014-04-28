@@ -42,6 +42,33 @@ $(document).ready(function() {
     callback: function(index, elem) {},
     transitionEnd: function(index, elem) {}
   });
+
+
+  (function($) {
+  $(function() {
+    var jcarousel = $('.jcarousel');
+    jcarousel.on('jcarousel:reload jcarousel:create', function() {
+      var width = jcarousel.innerWidth();
+      if (width >= 600) {
+        width = width / 3;
+      } else if (width >= 345) {
+        width = width / 1;
+      }
+      jcarousel.jcarousel('items').css('width', width + 'px');
+    }).jcarousel({
+      wrap: 'circular'
+    });
+    $('.jcarousel-control-prev').jcarouselControl({
+      target: '-=1'
+    });
+    $('.jcarousel-control-next').jcarouselControl({
+      target: '+=1'
+    });
+  });
+})(jQuery);
+
+
+
 });
 // Navigation
 ///////////////////////////////////////////////////////////////////////////////
@@ -122,28 +149,6 @@ $('a.js-vertical-tab').click(function() {
 
 
 
-(function($) {
-  $(function() {
-    var jcarousel = $('.jcarousel');
-    jcarousel.on('jcarousel:reload jcarousel:create', function() {
-      var width = jcarousel.innerWidth();
-      if (width >= 600) {
-        width = width / 3;
-      } else if (width >= 320) {
-        width = width / 1;
-      }
-      jcarousel.jcarousel('items').css('width', width + 'px');
-    }).jcarousel({
-      wrap: 'circular'
-    });
-    $('.jcarousel-control-prev').jcarouselControl({
-      target: '-=1'
-    });
-    $('.jcarousel-control-next').jcarouselControl({
-      target: '+=1'
-    });
-  });
-})(jQuery);
 
 
 

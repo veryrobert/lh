@@ -160,12 +160,20 @@ ul.primaryMenu > li, ul.menu > li {
     font-size: 0.8em;
   }
   &:after {
-    content: url("../img/slash.svg");
-    vertical-align: -3px;
+    content: " / ";
+    font-weight: bold;
+    opacity: 0.5;
+    vertical-align: -2px;
+    margin-right: 1px;
   }
   &:last-of-type {
     &:after {
       content: "";
+      font-weight: bold;
+
+    }
+    a {
+       margin-right: 0px;
     }
   }
 }
