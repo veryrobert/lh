@@ -79,9 +79,59 @@ ul.social {
   a.instagram {
     background-position-x: 48px;
   }
+
+    a.twitter {
+    background-position-x: 6%;
+  }
+  a.facebook {
+    background-position-x: -95px;
+  }
+  a.youtube {
+    background-position-x: 127px;
+  }
+  a.instagram {
+    background-position-x: 48px;
+  }
+
+ @include media($mobile) {  
+    a.twitter {
+    background-position-x: 2px;
+  }
+  a.facebook {
+    background-position-x: -78px;
+  }
+  a.youtube {
+    background-position-x: 143px;
+  }
+  a.instagram {
+    background-position-x: 65px;
+  }
+
+}
+
+  @include media($small-mobile) {
+
+  a.twitter {
+    background-position-x: -8px;
+  }
+  a.facebook {
+    background-position-x: -88px;
+  }
+  a.youtube {
+    background-position-x: 132px;
+  }
+  a.instagram {
+    background-position-x: 58px;
+  }
+
+  }
   
 
   }
+
+  
+
+  
 
 }
 

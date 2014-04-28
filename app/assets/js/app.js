@@ -246,13 +246,13 @@ $(window).on("load resize", function() {
 
       tabPath();
 
-    $('.btn').click(function(){
-      $('.modal-window').fadeIn();
-    });
+      $('.btn').click(function(){
+        $('.modal-window').fadeIn();
+      });
 
-    $('.modal-close').click(function(){
-      $('.modal-window').fadeOut();
-    });
+      $('.modal-close').click(function(){
+        $('.modal-window').fadeOut();
+      });
 
   }
 

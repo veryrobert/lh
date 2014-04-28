@@ -1557,6 +1557,32 @@ aside.social ul.social {
       background-position-x: 127px; }
     aside.social ul.social li a.instagram {
       background-position-x: 48px; }
+    aside.social ul.social li a.twitter {
+      background-position-x: 6%; }
+    aside.social ul.social li a.facebook {
+      background-position-x: -95px; }
+    aside.social ul.social li a.youtube {
+      background-position-x: 127px; }
+    aside.social ul.social li a.instagram {
+      background-position-x: 48px; }
+    @media screen and (max-width: 720px) {
+      aside.social ul.social li a.twitter {
+        background-position-x: 2px; }
+      aside.social ul.social li a.facebook {
+        background-position-x: -78px; }
+      aside.social ul.social li a.youtube {
+        background-position-x: 143px; }
+      aside.social ul.social li a.instagram {
+        background-position-x: 65px; } }
+    @media screen and (max-width: 340px) {
+      aside.social ul.social li a.twitter {
+        background-position-x: -8px; }
+      aside.social ul.social li a.facebook {
+        background-position-x: -88px; }
+      aside.social ul.social li a.youtube {
+        background-position-x: 132px; }
+      aside.social ul.social li a.instagram {
+        background-position-x: 58px; } }
 
 ul.bullets {
   float: left;
@@ -2311,10 +2337,6 @@ section.show-listings.is-open {
   margin-bottom: 0px;
   width: 48%;
   float: left; }
-
- .cart {
-  width: 80px;
- } 
 
 aside#cart {
   margin-top: 10px; }
@@ -3682,7 +3704,7 @@ aside {
     margin-left: -10px; }
 
   aside.social ul.social li {
-    padding: 16px 27px; } }
+    padding: 16px 10px; } }
 @media screen and (max-width: 720px) {
   #single-film .movie-info, #payment .movie-info {
     position: relative;
@@ -3854,6 +3876,14 @@ aside {
 
   .btn a {
     color: #fff; } }
+@media screen and (max-width: 340px) {
+  .swipe span.container {
+    top: 87%;
+    width: 85%; }
+    .swipe span.container h3 {
+      font-size: 16px; }
+    .swipe span.container.up {
+      height: 38px; } }
 @media screen and (max-width: 980px) {
   body aside.col-four.booking {
     padding: 22px; }
