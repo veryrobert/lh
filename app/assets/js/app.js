@@ -6,6 +6,8 @@ $(document).ready(function() {
     $(this).height(height);
   });
   
+
+
   // Ajax Request
   ///////////////////////////////////////////////////////////////////////////////
   
@@ -24,7 +26,7 @@ $(document).ready(function() {
       $(this).next().toggleClass('is-open').toggle();
       accordionTabs.find('.is-active').removeClass('is-active');
       $(this).addClass('is-active');
-      $(this).children('span').addClass('is-active');
+      $(this).children('div').addClass('is-active');
     } else {
       event.preventDefault();
     }
@@ -224,30 +226,63 @@ $('div.content').each(function(){
 
 
 $(window).on("load resize", function() {
-  if($(window).width() >= 890) {
+  if($(window).width() >= 981) {
+
+         $('.primaryMenu').show().css('display','inline-block');
+          $(".menu-toggle").hide();
+  } else {
+
+     $(".menu-toggle").show();
+     $('.primaryMenu').hide().css('display','none');
+
 
 
   }
+
+
+});
+
+
+$(window).resize(function(){
+
 });
 
 $(window).on("load resize", function() {
 
-  if(checkDevice() === true || $(window).width() <= 890) {
-      $('.primaryMenu').hide();
+var tabWidth = $('.tab-header-and-content').width();
+
+
+$('.home .accordion-tabs-minimal .arrow-down').css({
+  
+    'left' : tabWidth / 2 - 13,
+    'top' : ''
+
+  });
+
+  if(checkDevice() === true || $(window).width() <= 980) {
+      // $('.primaryMenu').hide();
       
       $('.arrow-down').addClass('mobile');
       $(".js-vertical-tab-content").show();
-      $(".menu-toggle").show();
       $("a.vertical-tab-accordion-heading").hide();
   } else {
 
-      $('.primaryMenu').show().css('display','inline-block');
+ 
       $('.arrow-down').removeClass('mobile');
        $('.accordion-tabs-minimal').each(function(index) {
+
         $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+
+        if($(this).children('li').not(':first-child')) {
+
+          $(this).removeClass('is-active');
+
+        }
+
+
         });
 
-        $(".menu-toggle").hide();
+        // $(".menu-toggle").hide();
 
       tabPath();
 
@@ -270,6 +305,10 @@ $(window).on("load resize", function() {
          $('.accordion-tabs-minimal').each(function() {
         $('a.is-active').removeClass('is-active').next().removeClass('is-open').hide();
       });
+
+   $('.tab-link').click(function(){
+    $('.is-open').css('display','none');
+   });      
 
   }
 
@@ -301,8 +340,6 @@ $('.menu-toggle').click(function() {
 
 
 
-
-
 var tabPath = function() {
     $(function(){
       var path = window.location.pathname;
@@ -311,6 +348,8 @@ var tabPath = function() {
       }
     });
 };
+
+
 
 
 // <span class="arrow-right">

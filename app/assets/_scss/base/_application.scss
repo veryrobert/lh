@@ -99,6 +99,7 @@ nav {
     
   form.three-twelve {
     margin-right: 0px;
+    width: 240px;
   }
 
   }
@@ -127,7 +128,7 @@ header {
     top: 26px;
     left: 36%;
     
-    @include triangle(8px 6px, grey, down);
+    @include triangle(8px 6px, #ccc, down);
   }
 }
 
@@ -157,14 +158,15 @@ ul.primaryMenu {
 
 ul.primaryMenu > li, ul.menu > li {
   a {
-    font-size: 0.8em;
+    font-size: 0.83em;
+    margin-left: 3px;
   }
   &:after {
-    content: " / ";
-    font-weight: bold;
-    opacity: 0.5;
+    content: " /  ";
+    font-weight: bolder;
+    opacity: 0.7;
     vertical-align: -2px;
-    margin-right: 1px;
+    // margin-right: 1px;
   }
   &:last-of-type {
     &:after {
@@ -253,17 +255,17 @@ ul.subMenu li:last-child a:hover, ul.subMenu li:last-child a {
 
 .subMenu-1 {
    top: 55px;
-   left: -29px;
+   left: -30px;
 }
 
 .subMenu-2 {
    top: 55px;
-   left: -38px;
+   left: -34px;
 }
 
 .subMenu-3 {
    top: 55px;
-   left: -35px;
+   left: -36px;
 }
 
 
@@ -307,9 +309,11 @@ footer {
     li:after {
       content: " |";
     }
+
     li:nth-child(4):after, li:nth-child(7):after, li:last-child:after {
       content: " ";
     }
+
   }
   .logos {
     margin-bottom: 22px;
@@ -1069,7 +1073,7 @@ h2.costs {
     @include sprite(sprite-1, 97%, 56.2%, 42px, 42px);
     background-color:  darken($dark-purple, 2%);
     padding: 3px;
-    height: 40px;
+    height: 39px;
     width: 41px;
     left: auto;
     top: 0px;

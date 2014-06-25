@@ -3,6 +3,8 @@ body {
     .hide-980 {
       display: none;
     }
+
+
   }
 
   @include media($below-730) {
@@ -69,7 +71,7 @@ body {
   .season-tickets {
     right: 66px;
     h6 {
-      font-size: 10px;
+      // font-size: 10px;
     }
   }
   header .social {
@@ -177,7 +179,6 @@ div.process.success h6 {
   }
 
 
-
   .nav-logo {
     .wrapper {
       padding: 0px;
@@ -186,8 +187,6 @@ div.process.success h6 {
   }
   ul.primaryMenu {
     background: $dark-purple;
-    display: none;
-    // position: relative;
     float: left;
     padding-right: 0px;
     z-index: 99999;
@@ -195,7 +194,8 @@ div.process.success h6 {
     height: auto;
     width: 100%;
     margin-top: 0px;
-    // padding-top: 4px;
+    display: none;
+
     > li {
       display: block;
       margin: 0px;
@@ -312,6 +312,11 @@ padding-bottom: 0px;
   }
 
 
+  #secondNav div:first-of-type {
+    margin-left: 30px;    
+  } 
+
+
 }
 
 
@@ -343,7 +348,7 @@ padding-bottom: 0px;
   }
 
   ul.social.pull-right.three-twelve {
-    width: 50%;
+    width: auto;
   }
 
   header div.logo {
@@ -511,7 +516,7 @@ padding-bottom: 0px;
     padding: 10px 22px;
   }
   .bottom-row {
-    display: none;
+    // display: none;
   }
   .listings-summary {
     position: relative;
@@ -680,6 +685,18 @@ div.pull-left.three-twelve.listings-summary {
   color: #fff;
 }
 
+#firstNav form {
+  display: none;
+}
+
+  div.cart.pull-right {
+    height: 60px;
+  }
+
+  ul.primaryMenu > li:after, ul.menu > li:after {
+    margin-right: 0px;
+  }
+
 }
 
 
@@ -697,5 +714,18 @@ div.pull-left.three-twelve.listings-summary {
     height: 38px;
   }
 
+
   }
+
+
+  header div.logo {
+    padding: 22px 12px;
+    background: aqua;
+  }
+
+
 }
+
+
+
+

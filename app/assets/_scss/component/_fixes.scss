@@ -1,0 +1,77 @@
+@include media($below-980) {
+
+	.film-review {
+		img.one-twelve {
+			width: 129px;
+			padding-bottom: 20px;
+		}
+
+		.modal .btn {
+			top: 215px;
+		}
+
+	}
+
+
+
+	
+
+}	
+
+
+aside button.full-width-button {
+background-position: 7px -882px;
+}
+
+.tickets-module button {
+background-position: -145px -882px;
+}
+
+@include media($mobile) {
+
+	.bottom-row div:last-child {
+		border-right: none;
+		// background: aqua;
+		margin-left: -8px;
+		width: 150%;
+		border-top: solid 1px #ececec;
+	}
+
+
+.season-tickets .more-info {
+	margin-bottom: 30px;
+	padding-bottom: 0px;
+}
+
+
+}
+
+
+@media screen and (max-width: 1080px)  {
+
+div.process {
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+
+	}
+
+	#secondNav div:first-of-type {
+		margin-left: 30px;		
+	}	
+
+}
+
+@media screen and (max-width: 984px)  {
+
+div.process, div.process.active {
+		width: 60px;
+		overflow: hidden;
+	}
+
+	div.process.payment {
+margin-left: -5px;
+}
+
+
+}
